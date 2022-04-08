@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\riky\\source\\repos\\trabajosPracticos\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\gonza\\Source\\Repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\riky\\source\\repos\\trabajosPracticos\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\gonza\\Source\\Repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\riky\\source\\repos\\trabajosPracticos\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\gonza\\Source\\Repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\riky\\source\\repos\\trabajosPracticos\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\riky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\riky\\source\\repos\\trabajosPracticos\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\gonza\\Source\\Repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gonza\\Source\\Repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\riky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gonza\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
