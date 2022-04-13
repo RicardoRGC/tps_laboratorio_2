@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Operando
+    public class Operando
     {
         private double numero;
 
@@ -22,12 +22,18 @@ namespace Entidades
 
         public Operando(string strNumero)
         {
-            this.numero = numero;
+            this.numero = Convert.ToDouble(strNumero);
         }
 
         private double ValidarOperando(string strNumero)
         {
-            double numero = 0;
+
+            double numero;
+
+            if(!double.TryParse(Console.ReadLine(), out numero))
+            {
+                numero = 0;
+            }
 
             return numero;
 
@@ -38,7 +44,11 @@ namespace Entidades
         /// </summary>
         private bool EsBinario(string binario)
         {
-            return true;
+            if(binario=="1"||binario=="0")
+            {
+                return true;
+            }
+            return false;
         }
         public string BinarioDecimal(string binario)
         {
