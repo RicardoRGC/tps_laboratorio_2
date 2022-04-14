@@ -38,6 +38,7 @@ namespace MiCalculadora
         private void btLimpiar_Click(object sender, EventArgs e)
         {
             cmbOperador.SelectedIndex = -1;
+            lblResultado.Text =String.Empty;
 
             foreach (Control item in this.Controls)
             {
@@ -67,9 +68,6 @@ namespace MiCalculadora
 
 
            
-
-
-
             Operando num1 = new Operando(txtNumero1.Text);
             Operando num2 = new Operando(txtNumero2.Text);
           
@@ -77,6 +75,8 @@ namespace MiCalculadora
             double Resultado = Calculadora.Operar(num1,num2,char.Parse(cmbOperador.Text));
 
             lblResultado.Text = Resultado.ToString();
+
+            lstOperaciones.Items.Add(txtNumero2.Text);
 
         }
     }
