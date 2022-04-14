@@ -31,7 +31,7 @@ namespace Entidades
         /// <param name="num2"></param>
         /// <param name="operador"></param>
         /// <returns></returns>
-      /*  public static double Operar(Operando num1, Operando num2, char operador)
+        public static double Operar(Operando num1, Operando num2, char operador)
         {
             double resultado = 0;
             char operadorValidado;
@@ -44,7 +44,7 @@ namespace Entidades
                     break;
 
                 case "-":
-                    resultado = num1 - num2;
+                   resultado = num1 - num2;
                     break;
 
                 case "/":
@@ -56,11 +56,11 @@ namespace Entidades
                     break;
 
                 case "*":
-                    resultado = num1 * num2;
+                   resultado = num1 * num2;
                     break;
             }
             return resultado;
-        }*/
+        }
 
     }
 }

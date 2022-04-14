@@ -22,7 +22,7 @@ namespace Entidades
 
         public Operando(string strNumero):this()
         {
-            this.numero = Convert.ToDouble(strNumero);
+            this.Numero = strNumero;
         }
 
         public string Numero
@@ -52,8 +52,6 @@ namespace Entidades
         }
 
    
-
-       
 
        
 
@@ -124,9 +122,26 @@ namespace Entidades
         /// </summary>
         /// <param name="numero"></param>
         /// <returns></returns>
-        public string DecimalBinario(string numero)
+        //public string DecimalBinario(string numero)
+        //{
+        //    Numero=numero;
+        //}
+
+
+        ///Sobrecargas
+        ///
+        public static double operator +(Operando n1, Operando n2)
         {
-            Numero=numero;
+            return n1.numero + n2.numero;
+        } public static double operator -(Operando n1, Operando n2)
+        {
+            return n1.numero - n2.numero;
+        } public static double operator /(Operando n1, Operando n2)
+        {
+            return n1.numero / n2.numero;
+        } public static double operator *(Operando n1, Operando n2)
+        {
+            return n1.numero * n2.numero;
         }
     }
 }
