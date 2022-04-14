@@ -15,22 +15,33 @@ namespace Entidades
         {
             this.numero = 0;
         }
-        public Operando(double numero)
+        public Operando(double numero):this()
         {
             this.numero = numero;
         }
 
-        public Operando(string strNumero)
+        public Operando(string strNumero):this()
         {
             this.numero = Convert.ToDouble(strNumero);
         }
 
+        public string Numero
+        {
+            set
+            {
+                this.numero = ValidarOperando(value);
+            }
+            //get
+            //{
+            //    return this.numero.ToString();
+            //}
+        }
         private double ValidarOperando(string strNumero)
         {
 
             double numero;
 
-            if(!double.TryParse(Console.ReadLine(), out numero))
+            if(!double.TryParse(strNumero, out numero))
             {
                 numero = 0;
             }
@@ -39,6 +50,13 @@ namespace Entidades
 
 
         }
+
+   
+
+       
+
+       
+
         /// <summary>
         /// valida q solo sea 0 e 1.
         /// </summary>
@@ -51,17 +69,64 @@ namespace Entidades
             return false;
         }
         public string BinarioDecimal(string binario)
+
         {
+            if (EsBinario(binario))
+            {
+
+
+
+                int binarioInt = Convert.ToInt32(binario);
+                int numero = 0;
+                int digito = 0;
+                const int DIVISOR = 10;
+
+                for (long i = binarioInt, j = 0; i > 0; i /= DIVISOR, j++)
+                {
+                    digito = (int)i % DIVISOR;
+                    if (digito != 1 && digito != 0)
+                    {
+                        return "Valor inválido";
+                    }
+                    numero += digito * (int)Math.Pow(2, j);
+                }
+
+
+                return numero.ToString();
+            }
+            return "Valor inválido";
 
         }
         public string DecimalBinario(double numero)
         {
+            double binario = 0;
 
+            const double DIVISOR = 2;
+            double digito = 0;
+
+            for (double i = numero % DIVISOR, j = 0; numero > 0; numero /= DIVISOR, i = numero % DIVISOR, j++)
+            {
+                for (int k = 0; k < DIVISOR; k++)
+                {
+                    digito = i % DIVISOR;
+                    binario += digito * (double)Math.Pow(10, j);
+
+                }
+
+            }
+            string numString = binario.ToString();
+
+            return numString;
         }
-
+        /// <summary>
+        ///  convertirán el resultado, trabajarán con enteros positivos, 
+        ///  quedándose para esto con el valor absoluto y entero del double recibido:
+        /// </summary>
+        /// <param name="numero"></param>
+        /// <returns></returns>
         public string DecimalBinario(string numero)
         {
-
+            Numero=numero;
         }
     }
 }

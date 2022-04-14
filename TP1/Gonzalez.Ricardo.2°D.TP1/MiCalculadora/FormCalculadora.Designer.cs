@@ -32,7 +32,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbOperador = new System.Windows.Forms.ComboBox();
             this.btOperar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
@@ -61,7 +61,6 @@
             this.textBox2.Size = new System.Drawing.Size(157, 90);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // comboBox1
             // 
@@ -86,21 +85,18 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(207, 412);
             this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "4+2";
             // 
-            // comboBox2
+            // cmbOperador
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.comboBox2.Items.AddRange(new object[] {
-            "-",
-            "*",
-            "/",
-            "+"});
-            this.comboBox2.Location = new System.Drawing.Point(200, 127);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(157, 33);
-            this.comboBox2.TabIndex = 4;
+            this.cmbOperador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOperador.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cmbOperador.FormattingEnabled = true;
+            this.cmbOperador.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cmbOperador.Location = new System.Drawing.Point(225, 103);
+            this.cmbOperador.Name = "cmbOperador";
+            this.cmbOperador.Size = new System.Drawing.Size(109, 89);
+            this.cmbOperador.TabIndex = 4;
+            this.cmbOperador.UseWaitCursor = true;
             // 
             // btOperar
             // 
@@ -110,6 +106,7 @@
             this.btOperar.TabIndex = 5;
             this.btOperar.Text = "Operar";
             this.btOperar.UseVisualStyleBackColor = true;
+            this.btOperar.Click += new System.EventHandler(this.btOperar_Click);
             // 
             // btnLimpiar
             // 
@@ -159,7 +156,7 @@
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btOperar);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmbOperador);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox2);
@@ -172,6 +169,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Ricardo Gonzalez del curso 2°D";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCalculadora_FormClosing);
+            this.Load += new System.EventHandler(this.FormCalculadora_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,7 +181,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbOperador;
         private System.Windows.Forms.Button btOperar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCerrar;
