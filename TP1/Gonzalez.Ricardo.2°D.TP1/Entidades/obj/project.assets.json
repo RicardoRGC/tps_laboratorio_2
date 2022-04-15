@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\riky\\.nuget\\packages\\": {}
+    "C:\\Users\\gonza\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\riky\\Source\\Repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\riky\\Source\\Repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj",
-      "packagesPath": "C:\\Users\\riky\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\riky\\Source\\Repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\obj\\",
+      "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj",
+      "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\riky\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gonza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -45,7 +45,7 @@
             // 
             this.txtNumero1.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtNumero1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtNumero1.Location = new System.Drawing.Point(12, 102);
+            this.txtNumero1.Location = new System.Drawing.Point(17, 117);
             this.txtNumero1.Multiline = true;
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(157, 90);
@@ -56,7 +56,7 @@
             // 
             this.txtNumero2.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtNumero2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtNumero2.Location = new System.Drawing.Point(380, 102);
+            this.txtNumero2.Location = new System.Drawing.Point(385, 117);
             this.txtNumero2.Multiline = true;
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(157, 90);
@@ -72,9 +72,9 @@
             this.comboBox1.DropDownWidth = 90;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
-            this.comboBox1.Location = new System.Drawing.Point(225, 127);
+            this.comboBox1.Location = new System.Drawing.Point(230, 142);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(0, 23);
+            this.comboBox1.Size = new System.Drawing.Size(0, 33);
             this.comboBox1.TabIndex = 2;
             // 
             // cmbOperador
@@ -83,9 +83,9 @@
             this.cmbOperador.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cmbOperador.FormattingEnabled = true;
             this.cmbOperador.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmbOperador.Location = new System.Drawing.Point(225, 118);
+            this.cmbOperador.Location = new System.Drawing.Point(230, 117);
             this.cmbOperador.Name = "cmbOperador";
-            this.cmbOperador.Size = new System.Drawing.Size(109, 62);
+            this.cmbOperador.Size = new System.Drawing.Size(109, 89);
             this.cmbOperador.TabIndex = 1;
             this.cmbOperador.UseWaitCursor = true;
             // 
@@ -140,25 +140,26 @@
             // lstOperaciones
             // 
             this.lstOperaciones.FormattingEnabled = true;
-            this.lstOperaciones.ItemHeight = 15;
+            this.lstOperaciones.ItemHeight = 25;
             this.lstOperaciones.Location = new System.Drawing.Point(566, 41);
             this.lstOperaciones.Name = "lstOperaciones";
             this.lstOperaciones.Size = new System.Drawing.Size(193, 379);
             this.lstOperaciones.TabIndex = 8;
+            this.lstOperaciones.TabStop = false;
             // 
             // lblResultado
             // 
             this.lblResultado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblResultado.Location = new System.Drawing.Point(12, 53);
+            this.lblResultado.Location = new System.Drawing.Point(12, 41);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblResultado.Size = new System.Drawing.Size(525, 37);
-            this.lblResultado.TabIndex = 9;
+            this.lblResultado.Size = new System.Drawing.Size(525, 59);
+            this.lblResultado.TabIndex = 10;
             // 
             // MiCalculadora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 450);
             this.Controls.Add(this.lblResultado);
