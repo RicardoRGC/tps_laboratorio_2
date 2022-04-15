@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gonza\\.nuget\\packages\\": {}
+    "C:\\Users\\riky\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\MiCalculadora.csproj",
+      "projectUniqueName": "C:\\Users\\riky\\source\\repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\MiCalculadora.csproj",
       "projectName": "MiCalculadora",
-      "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\MiCalculadora.csproj",
-      "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\obj\\",
+      "projectPath": "C:\\Users\\riky\\source\\repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\MiCalculadora.csproj",
+      "packagesPath": "C:\\Users\\riky\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\riky\\source\\repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gonza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\riky\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj"
+            "C:\\Users\\riky\\source\\repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\riky\\source\\repos\\tps_laboratorio_2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj"
             }
           }
         }
