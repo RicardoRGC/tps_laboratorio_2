@@ -1,6 +1,6 @@
 ﻿namespace MiCalculadora
 {
-    partial class MiCalculadora
+    partial class FormCalculadora
     {
         /// <summary>
         ///  Required designer variable.
@@ -50,6 +50,7 @@
             this.txtNumero1.Size = new System.Drawing.Size(157, 90);
             this.txtNumero1.TabIndex = 0;
             this.txtNumero1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNumero1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero1_KeyPress);
             // 
             // txtNumero2
             // 
@@ -70,7 +71,7 @@
             this.cmbOperador.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmbOperador.Location = new System.Drawing.Point(225, 136);
             this.cmbOperador.Name = "cmbOperador";
-            this.cmbOperador.Size = new System.Drawing.Size(109, 62);
+            this.cmbOperador.Size = new System.Drawing.Size(109, 89);
             this.cmbOperador.TabIndex = 1;
             this.cmbOperador.UseWaitCursor = true;
             // 
@@ -122,11 +123,12 @@
             this.btnConvertirADecimal.TabIndex = 7;
             this.btnConvertirADecimal.Text = "Convertir a Decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = true;
+            this.btnConvertirADecimal.Click += new System.EventHandler(this.btnConvertirADecimal_Click);
             // 
             // lstOperaciones
             // 
             this.lstOperaciones.FormattingEnabled = true;
-            this.lstOperaciones.ItemHeight = 15;
+            this.lstOperaciones.ItemHeight = 25;
             this.lstOperaciones.Location = new System.Drawing.Point(566, 41);
             this.lstOperaciones.Name = "lstOperaciones";
             this.lstOperaciones.Size = new System.Drawing.Size(193, 379);
@@ -139,13 +141,14 @@
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblResultado.Location = new System.Drawing.Point(12, 41);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblResultado.Size = new System.Drawing.Size(525, 59);
             this.lblResultado.TabIndex = 10;
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // MiCalculadora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 450);
             this.Controls.Add(this.lblResultado);

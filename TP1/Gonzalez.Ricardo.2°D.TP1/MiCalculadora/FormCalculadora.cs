@@ -11,9 +11,9 @@ using Entidades;
 
 namespace MiCalculadora
 {
-    public partial class MiCalculadora : Form
+    public partial class FormCalculadora : Form
     {
-        public MiCalculadora()
+        public FormCalculadora()
         {
             InitializeComponent();
         }
@@ -91,13 +91,36 @@ namespace MiCalculadora
             double resultado = Calculadora.Operar(num1, num2, char.Parse(operador));
 
             
-
+           
             return resultado;
         }
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            Operando
+            string resultado= Operando.DecimalBinario(lblResultado.Text);
+
+
+            lblResultado.Text = resultado;
+             
+           
+        }
+
+        private void btnConvertirADecimal_Click(object sender, EventArgs e)
+        {
+            string resultado = Operando.BinarioDecimal(lblResultado.Text);
+
+            lblResultado.Text = resultado;
+        }
+
+        private void txtNumero1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            txtNumero1.ForeColor = Color.Black;
+
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled=true;
+                txtNumero1.ForeColor= Color.Red;
+            }
         }
     }
 }

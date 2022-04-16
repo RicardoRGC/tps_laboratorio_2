@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace Entidades
 {
@@ -58,15 +59,15 @@ namespace Entidades
         /// <summary>
         /// valida q solo sea 0 e 1.
         /// </summary>
-        private bool EsBinario(string binario)
+        private static bool EsBinario(string binario)
         {
-            if(binario=="1"||binario=="0")
+            if (Regex.IsMatch(binario, "[^01]"))
             {
-                return true;
+                return false;
             }
-            return false;
+            return true;
         }
-        public string BinarioDecimal(string binario)
+        public static string BinarioDecimal(string binario)
 
         {
             if (EsBinario(binario))
@@ -95,27 +96,30 @@ namespace Entidades
             return "Valor inválido";
 
         }
-        public string DecimalBinario(double numero)
+        public static string DecimalBinario(double numero)
         {
-            numero = Math.Abs(numero);
-            double binario = 0;
+            string binarioADevolver = "";
+            int numeroAbsoluto = (int)Math.Abs(numero);
+            int resto;
 
-            const double DIVISOR = 2;
-            double digito = 0;
-
-            for (double i = numero % DIVISOR, j = 0; numero > 0; numero /= DIVISOR, i = numero % DIVISOR, j++)
+            if (numeroAbsoluto == 0)
             {
-                for (int k = 0; k < DIVISOR; k++)
-                {
-                    digito = i % DIVISOR;
-                    binario += digito * (double)Math.Pow(10, j);
-
-                }
-
+                binarioADevolver = "0";
             }
-            string numString = binario.ToString();
 
-            return numString;
+            while (numeroAbsoluto > 0)
+            {
+                resto = numeroAbsoluto % 2;
+                numeroAbsoluto = numeroAbsoluto / 2;
+
+                binarioADevolver = resto + binarioADevolver;
+            }
+
+            return binarioADevolver;
+
+          
+
+            
         }
         /// <summary>
         ///  convertirán el resultado, trabajarán con enteros positivos, 
@@ -123,12 +127,13 @@ namespace Entidades
         /// </summary>
         /// <param name="numero"></param>
         /// <returns></returns>
-        public string DecimalBinario(string numero)
+        public static string DecimalBinario(string numero)
         {
             double num;
             num = double.Parse(numero);
+          
 
-            string resultado = DecimalBinario(num);
+            string resultado = DecimalBinario(Math.Abs(num));
 
 
             return resultado;
