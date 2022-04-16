@@ -70,30 +70,58 @@ namespace Entidades
         public static string BinarioDecimal(string binario)
 
         {
-            if (EsBinario(binario))
+
             {
+                int longitud = binario.Length - 1;
+                double numeroDecimal = 0;
+                int contador = 0;
 
-
-
-                int binarioInt = Convert.ToInt32(binario);
-                int numero = 0;
-                int digito = 0;
-                const int DIVISOR = 10;
-
-                for (long i = binarioInt, j = 0; i > 0; i /= DIVISOR, j++)
+                if (EsBinario(binario))
                 {
-                    digito = (int)i % DIVISOR;
-                    if (digito != 1 && digito != 0)
+                    for (int i = longitud; i >= 0; i--)
                     {
-                        return "Valor inválido";
+                        if (binario[i] == '1')
+                        {
+                            numeroDecimal += Math.Pow(2, contador);
+                        }
+
+                        contador++;
                     }
-                    numero += digito * (int)Math.Pow(2, j);
+
+                    return numeroDecimal.ToString();
                 }
 
-
-                return numero.ToString();
+                return "Valor inválido";
             }
-            return "Valor inválido";
+            //    if (EsBinario(binario))
+            //    {
+
+            //        int binarioInt = Convert.ToInt32(binario);
+
+            //        if (binarioInt < int.MaxValue)
+            //        {
+
+
+
+            //            int numero = 0;
+            //        int digito = 0;
+            //        const int DIVISOR = 10;
+
+            //        for (long i = binarioInt, j = 0; i > 0; i /= DIVISOR, j++)
+            //        {
+            //            digito = (int)i % DIVISOR;
+            //            if (digito != 1 && digito != 0)
+            //            {
+            //                return "Valor inválido";
+            //            }
+            //            numero += digito * (int)Math.Pow(2, j);
+            //        }
+
+
+            //        return numero.ToString();
+            //    }
+            //}
+            //    return "Valor inválido";
 
         }
         public static string DecimalBinario(double numero)
@@ -114,6 +142,7 @@ namespace Entidades
 
                 binarioADevolver = resto + binarioADevolver;
             }
+            
 
             return binarioADevolver;
 
@@ -130,13 +159,17 @@ namespace Entidades
         public static string DecimalBinario(string numero)
         {
             double num;
-            num = double.Parse(numero);
-          
 
+           if(double.TryParse(numero, out num))
+            {
             string resultado = DecimalBinario(Math.Abs(num));
 
-
             return resultado;
+            }
+
+
+
+            return "0";
         }
 
 

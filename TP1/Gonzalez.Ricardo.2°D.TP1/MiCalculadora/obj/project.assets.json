@@ -32,9 +32,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\FormCalculadora.csproj",
-      "projectName": "FormCalculadora",
-      "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\FormCalculadora.csproj",
+      "projectUniqueName": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\MiCalculadora.csproj",
+      "projectName": "MiCalculadora",
+      "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\MiCalculadora.csproj",
       "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\obj\\",
       "projectStyle": "PackageReference",

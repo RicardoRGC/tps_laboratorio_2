@@ -55,13 +55,22 @@ namespace MiCalculadora
 
         private void btOperar_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtNumero1.Text) && !string.IsNullOrWhiteSpace(txtNumero2.Text) && cmbOperador.Text!=" " )
+            if (!string.IsNullOrWhiteSpace(txtNumero1.Text) && !string.IsNullOrWhiteSpace(txtNumero2.Text))
             {
                 double resultado = Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
 
                 lblResultado.Text = resultado.ToString();
 
+                if(cmbOperador.Text==" ")
+                {
+
+                lstOperaciones.Items.Add($"{txtNumero1.Text} + {txtNumero2.Text} = {lblResultado.Text}");
+                }
+                else
+                {
+
                 lstOperaciones.Items.Add($"{txtNumero1.Text} {cmbOperador.Text} {txtNumero2.Text} = {lblResultado.Text}");
+                }
             }
             else
             {
@@ -97,29 +106,77 @@ namespace MiCalculadora
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            string resultado= Operando.DecimalBinario(lblResultado.Text);
+            if (!string.IsNullOrWhiteSpace(lblResultado.Text))
+                {
+                string resultado= Operando.DecimalBinario(lblResultado.Text);
+
+                  lblResultado.Text = resultado;
+                lstOperaciones.Items.Add($"Binario {resultado}");
+                 }
+            else
+            {
+                MessageBox.Show($"Se debe tener un Resultado para realizar la Operacion"
+                    , "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
 
-            lblResultado.Text = resultado;
              
            
         }
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-            string resultado = Operando.BinarioDecimal(lblResultado.Text);
-
+            if (!string.IsNullOrWhiteSpace(lblResultado.Text))
+            {
+                string resultado = Operando.BinarioDecimal(lblResultado.Text);
             lblResultado.Text = resultado;
+                lstOperaciones.Items.Add($"Decimal {resultado}");
+            }
+            else
+            {
+                MessageBox.Show($"Se debe tener un Resultado para realizar la Operacion"
+                    , "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void txtNumero1_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if(char.IsDigit(e.KeyChar) || e.KeyChar == '-'|| e.KeyChar == '.' || e.KeyChar == ',')
+            {
             txtNumero1.ForeColor = Color.Black;
 
-            if (char.IsLetter(e.KeyChar))
+            }
+            else
             {
-                e.Handled=true;
-                txtNumero1.ForeColor= Color.Red;
+                txtNumero1.ForeColor = Color.Red;
+
+                if (char.IsLetter(e.KeyChar))
+                {
+                   
+                    txtNumero1.ForeColor= Color.Red;
+                }
+
+            }
+        }
+
+        private void txtNumero2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || e.KeyChar == '-' || e.KeyChar == '.' || e.KeyChar == ',')
+            {
+                txtNumero2.ForeColor = Color.Black;
+
+            }
+            else
+            {
+                txtNumero2.ForeColor = Color.Red;
+
+                if (char.IsLetter(e.KeyChar))
+                {
+
+                    txtNumero2.ForeColor = Color.Red;
+                }
+
             }
         }
     }

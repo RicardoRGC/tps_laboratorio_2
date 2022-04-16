@@ -54,7 +54,6 @@ C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Deb
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.dll
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.pdb
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.AssemblyReference.cache
-C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.MiCalculadora.resources
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.GenerateResource.cache
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.AssemblyInfoInputs.cache
@@ -66,3 +65,4 @@ C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Deb
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.pdb
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.FormCalculadora.resources
