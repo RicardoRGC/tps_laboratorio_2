@@ -97,6 +97,7 @@ namespace Entidades
         }
         public string DecimalBinario(double numero)
         {
+            numero = Math.Abs(numero);
             double binario = 0;
 
             const double DIVISOR = 2;
@@ -122,10 +123,16 @@ namespace Entidades
         /// </summary>
         /// <param name="numero"></param>
         /// <returns></returns>
-        //public string DecimalBinario(string numero)
-        //{
-        //    Numero=numero;
-        //}
+        public string DecimalBinario(string numero)
+        {
+            double num;
+            num = double.Parse(numero);
+
+            string resultado = DecimalBinario(num);
+
+
+            return resultado;
+        }
 
 
         ///Sobrecargas

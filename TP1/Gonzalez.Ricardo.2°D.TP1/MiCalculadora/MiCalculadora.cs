@@ -37,17 +37,7 @@ namespace MiCalculadora
 
         private void btLimpiar_Click(object sender, EventArgs e)
         {
-            cmbOperador.SelectedIndex = 4;
-            lblResultado.Text =String.Empty;
-
-            foreach (Control item in this.Controls)
-            {
-               if(item is TextBox)
-                {
-                    ((TextBox)item).Text = string.Empty;
-                    
-                }
-            }
+            Limpiar();
             
         }
 
@@ -65,21 +55,49 @@ namespace MiCalculadora
 
         private void btOperar_Click(object sender, EventArgs e)
         {
+            if (!string.IsNullOrWhiteSpace(txtNumero1.Text) && !string.IsNullOrWhiteSpace(txtNumero2.Text) && cmbOperador.Text!=" " )
+            {
+                double resultado = Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text);
+
+                lblResultado.Text = resultado.ToString();
+
+                lstOperaciones.Items.Add($"{txtNumero1.Text} {cmbOperador.Text} {txtNumero2.Text} = {lblResultado.Text}");
+            }
+            else
+            {
+                MessageBox.Show($"se deben completar los campos","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void Limpiar()
+        {
+
+            foreach (Control item in this.Controls)
+            {
+                if (item is TextBox)
+                {
+            cmbOperador.SelectedIndex = 4;
+            lblResultado.Text = String.Empty;
+                    ((TextBox)item).Text = string.Empty;
+
+                }
+            }
+        }
+        public static double Operar(string numero1, string numero2, string operador)
+        {
+
+            Operando num1 = new Operando(numero1);
+            Operando num2 = new Operando(numero2);
+
+            double resultado = Calculadora.Operar(num1, num2, char.Parse(operador));
+
             
 
+            return resultado;
+        }
 
-           
-            Operando num1 = new Operando(txtNumero1.Text);
-            Operando num2 = new Operando(txtNumero2.Text);
-
-         
-
-            double Resultado = Calculadora.Operar(num1,num2,char.Parse(cmbOperador.Text));
-
-            lblResultado.Text = Resultado.ToString();
-
-            lstOperaciones.Items.Add($"{txtNumero1.Text} {cmbOperador.Text} {txtNumero2.Text} = {Resultado}");
-
+        private void btnConvertirABinario_Click(object sender, EventArgs e)
+        {
+            Operando
         }
     }
 }

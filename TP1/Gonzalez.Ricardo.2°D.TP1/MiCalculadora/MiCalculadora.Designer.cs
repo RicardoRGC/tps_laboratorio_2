@@ -30,13 +30,12 @@
         {
             this.txtNumero1 = new System.Windows.Forms.TextBox();
             this.txtNumero2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.cmbOperador = new System.Windows.Forms.ComboBox();
             this.btOperar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnConvertirABinario = new System.Windows.Forms.Button();
+            this.btnConvertirADecimal = new System.Windows.Forms.Button();
             this.lstOperaciones = new System.Windows.Forms.ListBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -63,29 +62,15 @@
             this.txtNumero2.TabIndex = 2;
             this.txtNumero2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.DropDownHeight = 105;
-            this.comboBox1.DropDownWidth = 90;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.IntegralHeight = false;
-            this.comboBox1.Location = new System.Drawing.Point(230, 142);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(0, 33);
-            this.comboBox1.TabIndex = 2;
-            // 
             // cmbOperador
             // 
             this.cmbOperador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOperador.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cmbOperador.FormattingEnabled = true;
             this.cmbOperador.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmbOperador.Location = new System.Drawing.Point(230, 117);
+            this.cmbOperador.Location = new System.Drawing.Point(225, 136);
             this.cmbOperador.Name = "cmbOperador";
-            this.cmbOperador.Size = new System.Drawing.Size(109, 89);
+            this.cmbOperador.Size = new System.Drawing.Size(109, 62);
             this.cmbOperador.TabIndex = 1;
             this.cmbOperador.UseWaitCursor = true;
             // 
@@ -119,28 +104,29 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btCerrar_Click);
             // 
-            // button4
+            // btnConvertirABinario
             // 
-            this.button4.Location = new System.Drawing.Point(12, 352);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(264, 68);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Convertir a Binario";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnConvertirABinario.Location = new System.Drawing.Point(12, 352);
+            this.btnConvertirABinario.Name = "btnConvertirABinario";
+            this.btnConvertirABinario.Size = new System.Drawing.Size(264, 68);
+            this.btnConvertirABinario.TabIndex = 6;
+            this.btnConvertirABinario.Text = "Convertir a Binario";
+            this.btnConvertirABinario.UseVisualStyleBackColor = true;
+            this.btnConvertirABinario.Click += new System.EventHandler(this.btnConvertirABinario_Click);
             // 
-            // button5
+            // btnConvertirADecimal
             // 
-            this.button5.Location = new System.Drawing.Point(282, 352);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(264, 68);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Convertir a Decimal";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnConvertirADecimal.Location = new System.Drawing.Point(282, 352);
+            this.btnConvertirADecimal.Name = "btnConvertirADecimal";
+            this.btnConvertirADecimal.Size = new System.Drawing.Size(264, 68);
+            this.btnConvertirADecimal.TabIndex = 7;
+            this.btnConvertirADecimal.Text = "Convertir a Decimal";
+            this.btnConvertirADecimal.UseVisualStyleBackColor = true;
             // 
             // lstOperaciones
             // 
             this.lstOperaciones.FormattingEnabled = true;
-            this.lstOperaciones.ItemHeight = 25;
+            this.lstOperaciones.ItemHeight = 15;
             this.lstOperaciones.Location = new System.Drawing.Point(566, 41);
             this.lstOperaciones.Name = "lstOperaciones";
             this.lstOperaciones.Size = new System.Drawing.Size(193, 379);
@@ -159,18 +145,17 @@
             // 
             // MiCalculadora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 450);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.lstOperaciones);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnConvertirADecimal);
+            this.Controls.Add(this.btnConvertirABinario);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btOperar);
             this.Controls.Add(this.cmbOperador);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtNumero2);
             this.Controls.Add(this.txtNumero1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -191,13 +176,12 @@
 
         private System.Windows.Forms.TextBox txtNumero1;
         private System.Windows.Forms.TextBox txtNumero2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox cmbOperador;
         private System.Windows.Forms.Button btOperar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnConvertirABinario;
+        private System.Windows.Forms.Button btnConvertirADecimal;
         private System.Windows.Forms.ListBox lstOperaciones;
         private System.Windows.Forms.Label lblResultado;
     }
