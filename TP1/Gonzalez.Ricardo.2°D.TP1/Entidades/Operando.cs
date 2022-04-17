@@ -41,7 +41,10 @@ namespace Entidades
         {
 
             double numero;
+            
 
+            strNumero= strNumero.Replace('.', ',');
+    
             if(!double.TryParse(strNumero, out numero))
             {
                 numero = 0;

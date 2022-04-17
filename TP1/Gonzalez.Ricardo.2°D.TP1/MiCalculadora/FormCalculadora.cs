@@ -77,15 +77,15 @@ namespace MiCalculadora
                 MessageBox.Show($"se deben completar los campos","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        public void Limpiar()
+        private void Limpiar()
         {
 
             foreach (Control item in this.Controls)
             {
                 if (item is TextBox)
                 {
-            cmbOperador.SelectedIndex = 4;
-            lblResultado.Text = String.Empty;
+                    cmbOperador.SelectedIndex = 4;
+                    lblResultado.Text = String.Empty;
                     ((TextBox)item).Text = string.Empty;
 
                 }
