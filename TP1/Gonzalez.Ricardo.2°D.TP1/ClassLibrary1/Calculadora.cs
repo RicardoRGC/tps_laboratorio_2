@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Entidades1;
 
-namespace Entidades
+namespace Entidades1
 {
     public static class Calculadora
     {
@@ -20,7 +17,7 @@ namespace Entidades
             {
                 return operador;
             }
-           
+
 
             return '+';
         }
@@ -41,11 +38,11 @@ namespace Entidades
             switch (operadorValidado.ToString())
             {
                 case "+":
-                    resultado = num1 + num2; 
+                    resultado = num1 + num2;
                     break;
 
                 case "-":
-                   resultado = num1 - num2;
+                    resultado = num1 - num2;
                     break;
 
                 case "/":
@@ -57,11 +54,12 @@ namespace Entidades
                     break;
 
                 case "*":
-                   resultado = num1 * num2;
+                    resultado = num1 * num2;
                     break;
             }
             return resultado;
         }
 
-    }
+    
+}
 }

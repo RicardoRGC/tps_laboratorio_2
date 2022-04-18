@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-namespace Entidades
+namespace Entidades1
 {
     public class Operando
     {
@@ -16,12 +16,12 @@ namespace Entidades
         {
             this.numero = 0;
         }
-        public Operando(double numero):this()
+        public Operando(double numero) : this()
         {
             this.numero = numero;
         }
 
-        public Operando(string strNumero):this()
+        public Operando(string strNumero) : this()
         {
             this.Numero = strNumero;
         }
@@ -46,11 +46,11 @@ namespace Entidades
         {
 
             double numero;
-            
 
-            strNumero= strNumero.Replace('.', ',');
-    
-            if(!double.TryParse(strNumero, out numero))
+
+            strNumero = strNumero.Replace('.', ',');
+
+            if (!double.TryParse(strNumero, out numero))
             {
                 numero = 0;
             }
@@ -60,9 +60,9 @@ namespace Entidades
 
         }
 
-   
 
-       
+
+
 
         /// <summary>
         /// valida q solo sea 0 e 1.
@@ -84,29 +84,29 @@ namespace Entidades
 
         {
 
-            
-                int longitud = binario.Length - 1;
-                double numeroDecimal = 0;
-                int contador = 0;
 
-                if (EsBinario(binario))
+            int longitud = binario.Length - 1;
+            double numeroDecimal = 0;
+            int contador = 0;
+
+            if (EsBinario(binario))
+            {
+                for (int i = longitud; i >= 0; i--)
                 {
-                    for (int i = longitud; i >= 0; i--)
+                    if (binario[i] == '1')
                     {
-                        if (binario[i] == '1')
-                        {
-                            numeroDecimal += Math.Pow(2, contador);
-                        }
-
-                        contador++;
+                        numeroDecimal += Math.Pow(2, contador);
                     }
 
-                    return numeroDecimal.ToString();
+                    contador++;
                 }
 
-                return "Valor inválido";
-            
-          
+                return numeroDecimal.ToString();
+            }
+
+            return "Valor inválido";
+
+
 
         }
         /// <summary>
@@ -132,13 +132,13 @@ namespace Entidades
 
                 binarioADevolver = resto + binarioADevolver;
             }
-            
+
 
             return binarioADevolver;
 
-          
 
-            
+
+
         }
         /// <summary>
         ///  convertirán el resultado, trabajarán con enteros positivos, 
@@ -150,11 +150,11 @@ namespace Entidades
         {
             double num;
 
-           if(double.TryParse(numero, out num))
+            if (double.TryParse(numero, out num))
             {
-            string resultado = DecimalBinario(Math.Abs(num));
+                string resultado = DecimalBinario(Math.Abs(num));
 
-            return resultado;
+                return resultado;
             }
 
 

@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Entidades/1.0.0": {
+      "Entidades1/1.0.0": {
         "runtime": {
-          "Entidades.dll": {}
+          "Entidades1.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Entidades/1.0.0": {
+    "Entidades1/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

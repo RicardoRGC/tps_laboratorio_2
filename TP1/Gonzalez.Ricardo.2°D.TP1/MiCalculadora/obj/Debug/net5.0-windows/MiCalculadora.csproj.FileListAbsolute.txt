@@ -41,18 +41,12 @@ C:\Users\riky\source\repos\tps_laboratorio_2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCal
 C:\Users\riky\source\repos\tps_laboratorio_2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.pdb
 C:\Users\riky\source\repos\tps_laboratorio_2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache
 C:\Users\riky\source\repos\tps_laboratorio_2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
-C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.deps.json
-C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.runtimeconfig.json
-C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.runtimeconfig.dev.json
-C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.exe
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.exe
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.deps.json
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.json
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.runtimeconfig.dev.json
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.dll
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\MiCalculadora.pdb
-C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.dll
-C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades.pdb
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.AssemblyReference.cache
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.csproj.GenerateResource.cache
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
@@ -66,3 +60,5 @@ C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Deb
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.genruntimeconfig.cache
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\ref\MiCalculadora.dll
 C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\obj\Debug\net5.0-windows\MiCalculadora.FormCalculadora.resources
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades1.dll
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\MiCalculadora\bin\Debug\net5.0-windows\Entidades1.pdb

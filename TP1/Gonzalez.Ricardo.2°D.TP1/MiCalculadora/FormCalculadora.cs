@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidades;
+using Entidades1;
 
 namespace MiCalculadora
 {
@@ -17,7 +17,11 @@ namespace MiCalculadora
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// cierrra el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
             if(e.CloseReason==CloseReason.UserClosing)
@@ -29,18 +33,30 @@ namespace MiCalculadora
                 }
             }
         }
-
+        /// <summary>
+        /// cierrra el formulario 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// limpia el formulario, deja espacios en blanco
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
             
         }
-
+        /// <summary>
+        /// carga el cmb operardor por defecto 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
            
@@ -52,7 +68,11 @@ namespace MiCalculadora
             this.cmbOperador.SelectedIndex = 4;
 
         }
-
+        /// <summary>
+        /// valida que los espacios no esten en blanco y llama al metodo operar 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btOperar_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtNumero1.Text) && !string.IsNullOrWhiteSpace(txtNumero2.Text))
@@ -77,6 +97,9 @@ namespace MiCalculadora
                 MessageBox.Show($"se deben completar los campos","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        /// <summary>
+        ///deja en blanco lbl y textbox
+        /// </summary>
         private void Limpiar()
         {
 
@@ -91,6 +114,13 @@ namespace MiCalculadora
                 }
             }
         }
+        /// <summary>
+        /// instancia los 2 numeros recibidos y se los pasa por parametroa la funcion operar.
+        /// </summary>
+        /// <param name="numero1"></param>
+        /// <param name="numero2"></param>
+        /// <param name="operador"></param>
+        /// <returns>retorna el resultado de la operacion</returns>
         public static double Operar(string numero1, string numero2, string operador)
         {
 
@@ -103,7 +133,12 @@ namespace MiCalculadora
            
             return resultado;
         }
-
+        /// <summary>
+        /// valida que lbl no este vacio y llama a la funcion decimalbinario
+        /// muestra los resultados de las operaciones 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(lblResultado.Text))
@@ -123,7 +158,12 @@ namespace MiCalculadora
              
            
         }
-
+        /// <summary>
+        /// /// valida que lbl no este vacio y llama a la funcion binarioDecimal
+        /// muestra los resultados de las operaciones
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(lblResultado.Text))
@@ -139,10 +179,15 @@ namespace MiCalculadora
             }
 
         }
-
+        /// <summary>
+        /// valida las teclas permitidas, al ingresar letras se pone en rojo y se bloquea,
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtNumero1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(char.IsDigit(e.KeyChar) || e.KeyChar == '-'|| e.KeyChar == '.' || e.KeyChar == ',')
+            if(char.IsDigit(e.KeyChar) || e.KeyChar == '-'|| e.KeyChar == ',')
             {
             txtNumero1.ForeColor = Color.Black;
 
@@ -159,7 +204,11 @@ namespace MiCalculadora
 
             }
         }
-
+        /// <summary>
+        ///  valida las teclas permitidas, al ingresar letras se pone en rojo y se bloquea,
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txtNumero2_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (char.IsDigit(e.KeyChar) || e.KeyChar == '-' || e.KeyChar == '.' || e.KeyChar == ',')

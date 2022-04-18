@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
-      "Entidades/1.0.0": {
+      "Entidades1/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/Entidades.dll": {}
+          "bin/placeholder/Entidades1.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Entidades.dll": {}
+          "bin/placeholder/Entidades1.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Entidades/1.0.0": {
+    "Entidades1/1.0.0": {
       "type": "project",
-      "path": "../Entidades/Entidades.csproj",
-      "msbuildProject": "../Entidades/Entidades.csproj"
+      "path": "../ClassLibrary1/Entidades1.csproj",
+      "msbuildProject": "../ClassLibrary1/Entidades1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Entidades >= 1.0.0"
+      "Entidades1 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -53,8 +53,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\Entidades\\Entidades.csproj"
+            "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades1.csproj": {
+              "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades1.csproj"
             }
           }
         }

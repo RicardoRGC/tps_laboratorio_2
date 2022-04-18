@@ -1,0 +1,12 @@
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\obj\Debug\net5.0\Entidades1.csproj.AssemblyReference.cache
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\obj\Debug\net5.0\Entidades1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\obj\Debug\net5.0\Entidades1.AssemblyInfoInputs.cache
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\obj\Debug\net5.0\Entidades1.AssemblyInfo.cs
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\obj\Debug\net5.0\Entidades1.csproj.CoreCompileInputs.cache
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\bin\Debug\net5.0\Entidades1.deps.json
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\bin\Debug\net5.0\Entidades1.dll
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\bin\Debug\net5.0\Entidades1.pdb
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\obj\Debug\net5.0\Entidades1.dll
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\obj\Debug\net5.0\refint\Entidades1.dll
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\obj\Debug\net5.0\Entidades1.pdb
+C:\Users\gonza\Desktop\tp1p2\TP1\Gonzalez.Ricardo.2°D.TP1\ClassLibrary1\obj\Debug\net5.0\ref\Entidades1.dll
