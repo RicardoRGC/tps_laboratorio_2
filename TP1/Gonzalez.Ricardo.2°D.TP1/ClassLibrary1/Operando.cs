@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-namespace Entidades1
+namespace Entidades
 {
     public class Operando
     {

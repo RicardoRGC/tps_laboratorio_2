@@ -1,7 +1,7 @@
 ﻿using System;
-using Entidades1;
+using Entidades;
 
-namespace Entidades1
+namespace Entidades
 {
     public static class Calculadora
     {

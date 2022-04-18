@@ -4,12 +4,12 @@
     "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\MiCalculadora\\MiCalculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades1.csproj": {
+    "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades1.csproj",
-        "projectName": "Entidades1",
-        "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades1.csproj",
+        "projectUniqueName": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades.csproj",
+        "projectName": "Entidades",
+        "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades.csproj",
         "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
@@ -82,8 +82,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades1.csproj": {
-                "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades1.csproj"
+              "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\gonza\\Desktop\\tp1p2\\TP1\\Gonzalez.Ricardo.2°D.TP1\\ClassLibrary1\\Entidades.csproj"
               }
             }
           }
