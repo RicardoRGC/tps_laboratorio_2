@@ -40,6 +40,7 @@ namespace TP_02_2018
             taller += a3;
             taller += a4;
 
+
             Console.WriteLine(taller.ToString());
             Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
             Console.ReadKey();
