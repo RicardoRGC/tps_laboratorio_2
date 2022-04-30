@@ -34,7 +34,7 @@ namespace Entidades
         /// <summary>
         /// ReadOnly: Retornará el tamaño
         /// </summary>
-        public abstract ETamanio Tamanio { get;  }
+        protected abstract ETamanio Tamanio { get;  }
 
         /// <summary>
         /// Publica todos los datos del Vehiculo.

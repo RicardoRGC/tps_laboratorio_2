@@ -24,11 +24,16 @@ namespace Entidades
         {
             tipo = ETipo.CuatroPuertas;
         }
+        public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo)
+            : base(chasis, marca, color)
+        {
+            tipo = ETipo.CuatroPuertas;
+        }
 
         /// <summary>
         /// Sedan son 'Mediano'
         /// </summary>
-        public override ETamanio Tamanio
+        protected override ETamanio Tamanio
         {
             get
             {

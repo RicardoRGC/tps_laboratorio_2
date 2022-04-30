@@ -16,8 +16,8 @@ namespace TP_02_2018
             Console.SetWindowSize(Console.LargestWindowWidth / 2, Console.LargestWindowHeight - 2);
 
             // Nombre del alumno
-            Console.Title = "";
-
+            Console.Title = "Gonzalez Ricardo 2°D";
+            
             Taller taller = new Taller(6);
 
             Ciclomotor c1 = new Ciclomotor(Vehiculo.EMarca.BMW, "ASD012", ConsoleColor.Black);
