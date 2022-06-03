@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEquipo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Equipo>
+    <NombreEquipo>River</NombreEquipo>
+    <Id>1</Id>
+    <MontoPagado>0</MontoPagado>
+    <FechaDePgo1>0001-01-01T00:00:00</FechaDePgo1>
+  </Equipo>
+  <Equipo>
+    <NombreEquipo>Racing</NombreEquipo>
+    <Id>3</Id>
+    <MontoPagado>0</MontoPagado>
+    <FechaDePgo1>0001-01-01T00:00:00</FechaDePgo1>
+  </Equipo>
+  <Equipo>
+    <NombreEquipo>Nueva Estrella</NombreEquipo>
+    <Id>4</Id>
+    <MontoPagado>0</MontoPagado>
+    <FechaDePgo1>0001-01-01T00:00:00</FechaDePgo1>
+  </Equipo>
+  <Equipo>
+    <NombreEquipo>Boca</NombreEquipo>
+    <Id>6</Id>
+    <MontoPagado>0</MontoPagado>
+    <FechaDePgo1>0001-01-01T00:00:00</FechaDePgo1>
+  </Equipo>
+</ArrayOfEquipo>

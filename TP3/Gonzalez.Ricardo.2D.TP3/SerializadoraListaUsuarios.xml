@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUsuario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Usuario xsi:type="Arbitro">
+    <Nombre>Arbitro</Nombre>
+    <Apellido>gonza</Apellido>
+    <Dni>35600032</Dni>
+    <Edad>33</Edad>
+    <Legajo>1002</Legajo>
+    <IdEquipo>0</IdEquipo>
+  </Usuario>
+  <Usuario xsi:type="DirectorTecnico">
+    <Nombre>Director</Nombre>
+    <Apellido>Tecnico</Apellido>
+    <Dni>36469726</Dni>
+    <Edad>33</Edad>
+    <Legajo>1011</Legajo>
+    <IdEquipo>1</IdEquipo>
+  </Usuario>
+  <Usuario xsi:type="Jugador">
+    <Nombre>jugador</Nombre>
+    <Apellido>gonzalez</Apellido>
+    <Dni>64581667</Dni>
+    <Edad>32</Edad>
+    <Legajo>1016</Legajo>
+    <IdEquipo>1</IdEquipo>
+    <MontoPagado>0</MontoPagado>
+    <FechaDePgo1>0001-01-01T00:00:00</FechaDePgo1>
+  </Usuario>
+</ArrayOfUsuario>
