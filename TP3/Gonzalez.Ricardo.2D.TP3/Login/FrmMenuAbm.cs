@@ -45,6 +45,8 @@ namespace FormsTP3
                 DataGridViewColumn dataGridViewColumn = dgvListado.Columns[5];
                 dataGridViewColumn.Visible = false;
 
+                cmbFiltrarUsuarios.SelectedIndex = 0;
+
             }
             else
             {
@@ -110,19 +112,29 @@ namespace FormsTP3
             switch (cmbFiltrarUsuarios.SelectedIndex)
             {
                 case 0:
+                    dgvListado.DataSource = null;
 
                     dgvListado.DataSource = LigaFutbol<Usuario>.listaLigaStatica;
+
+
+
                     break;
                 case 1:
-
+                    dgvListado.DataSource = null;
                     dgvListado.DataSource = Usuario.ListarPorJugadores();
+                    DataGridViewColumn Column = dgvListado.Columns[0];
+                    DataGridViewColumn Column1 = dgvListado.Columns[1];
+                    DataGridViewColumn Column2 = dgvListado.Columns[2];
+                   // Column.Visible = false;
+                    Column2.Visible = false;
+                    Column1.Visible = false;
                     break;
                 case 2:
-
+                    dgvListado.DataSource = null;
                     dgvListado.DataSource = Usuario.ListarPorDirectorTec();
                     break;
                 case 3:
-
+                    dgvListado.DataSource = null;
                     dgvListado.DataSource = Usuario.ListarPorArbitro();
                     break;
 

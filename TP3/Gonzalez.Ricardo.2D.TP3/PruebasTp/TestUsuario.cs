@@ -8,10 +8,7 @@ namespace PruebasTp
     [TestClass]
     public class TestUsuario
     {
-     
-         
-
-
+           
         [TestMethod]
         public void DeveriaRetornarDatoInvalidoExceptionUsuario()
         {           
@@ -26,10 +23,27 @@ namespace PruebasTp
             Usuario.AgregarUsuario("Jugador", "gonza", "nombre", "35460002", "35","river" );
 
 
-            Assert.IsInstanceOfType(Jugador.BuscarUsuario("nombre"), typeof(Jugador));
+            Assert.IsInstanceOfType(Usuario.BuscarUsuario("nombre"), typeof(Jugador));
 
 
         }
+        [TestMethod]
+        public void DeveriaRetornar()
+        {
+            Equipo.AgregarEquipo("river");
+
+            Usuario.AgregarUsuario("Jugador", "gonza", "nombre", "35460002", "35", "river");
+
+            Jugador jugador = (Jugador)Usuario.BuscarUsuario("nombre");
+
+            jugador.PagoMensual("1500");
+
+            RegistroDePagos registroDePagos = RegistroDePagos.BuscarUsuario("nombre");
+
+            Assert.AreEqual(jugador, registroDePagos.Usuario1);
+
+        }
+        
 
     }
 }

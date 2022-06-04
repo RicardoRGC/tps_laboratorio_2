@@ -8,8 +8,9 @@ namespace EntidadesArchivos
         static string ruta;
         static Archivo()
         {
-            ruta = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            ruta += @"\source\repos\Gonzalez.Ricardo.2D.TP3";
+            
+            ruta = AppDomain.CurrentDomain.BaseDirectory;
+
 
         }
         public static void GuardarLastIdUsuario(string id)
@@ -21,12 +22,12 @@ namespace EntidadesArchivos
     
             try
             {
-                if (!Directory.Exists(ruta)) //valida si existe
+                if (!Directory.Exists(ruta)) 
                 {
-                    Directory.CreateDirectory(ruta); //crea una carpeta, si esta no existe
+                    Directory.CreateDirectory(ruta); 
                 }
-                //using (StreamWriter sw = new StreamWriter(completa,true)) //agrega datos al archivo existente
-                using (StreamWriter sw = new StreamWriter(completa)) //crea y sobrescribe archivo.
+            
+                using (StreamWriter sw = new StreamWriter(completa)) 
                 {
                     sw.WriteLine(id);
                 }
@@ -47,12 +48,12 @@ namespace EntidadesArchivos
     
             try
             {
-                if (!Directory.Exists(ruta)) //valida si existe
+                if (!Directory.Exists(ruta)) 
                 {
-                    Directory.CreateDirectory(ruta); //crea una carpeta, si esta no existe
+                    Directory.CreateDirectory(ruta); 
                 }
-                //using (StreamWriter sw = new StreamWriter(completa,true)) //agrega datos al archivo existente
-                using (StreamWriter sw = new StreamWriter(completa)) //crea y sobrescribe archivo.
+
+                using (StreamWriter sw = new StreamWriter(completa)) 
                 {
                     sw.WriteLine(id);
                 }
@@ -77,14 +78,10 @@ namespace EntidadesArchivos
 
                     using (StreamReader sr = new StreamReader(completa))
                     {
-                        string linea;
+                        
 
-                        datos = sr.ReadToEnd();// lee todo de una.
-
-                        //while ((linea = sr.ReadLine()) != null)// lee linea por linea.
-                        //{
-                        //    datos += "\n" + linea;
-                        //}
+                        datos = sr.ReadToEnd();
+                                               
                     }
                 }
                 return datos;

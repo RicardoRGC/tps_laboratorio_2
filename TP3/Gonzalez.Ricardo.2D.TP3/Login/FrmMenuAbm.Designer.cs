@@ -43,10 +43,11 @@
             this.dgvListado.AllowUserToOrderColumns = true;
             this.dgvListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dgvListado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListado.EnableHeadersVisualStyles = false;
             this.dgvListado.Location = new System.Drawing.Point(25, 54);
-            this.dgvListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvListado.Margin = new System.Windows.Forms.Padding(2);
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.ReadOnly = true;
             this.dgvListado.RowHeadersVisible = false;
@@ -58,8 +59,8 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(26, 7);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificar.Location = new System.Drawing.Point(25, 11);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(92, 28);
             this.btnModificar.TabIndex = 1;
@@ -69,8 +70,8 @@
             // 
             // btnAlta
             // 
-            this.btnAlta.Location = new System.Drawing.Point(214, 7);
-            this.btnAlta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAlta.Location = new System.Drawing.Point(214, 11);
+            this.btnAlta.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlta.Name = "btnAlta";
             this.btnAlta.Size = new System.Drawing.Size(92, 28);
             this.btnAlta.TabIndex = 2;
@@ -80,8 +81,8 @@
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(435, 7);
-            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnEliminar.Location = new System.Drawing.Point(420, 11);
+            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(92, 28);
             this.BtnEliminar.TabIndex = 3;
@@ -92,7 +93,7 @@
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(461, 228);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(72, 28);
             this.btnSalir.TabIndex = 4;
@@ -122,6 +123,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::FormsTP3.Properties.Resources.fondoAmb;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(560, 270);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbFiltrarUsuarios);
@@ -130,8 +133,10 @@
             this.Controls.Add(this.btnAlta);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.dgvListado);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmMenuAbm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.MenuListado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();

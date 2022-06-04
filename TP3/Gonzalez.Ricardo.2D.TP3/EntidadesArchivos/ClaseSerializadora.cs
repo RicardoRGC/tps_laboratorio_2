@@ -15,9 +15,8 @@ namespace EntidadesArchivos
 
         static ClaseSerializadora()
         {
-            ruta = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            ruta += @"\source\repos\Gonzalez.Ricardo.2D.TP3";
-            //\source\repos\Gonzalez.Ricardo.2D.TP3
+             ruta = AppDomain.CurrentDomain.BaseDirectory;
+                      
         }
         /// <summary>
         /// 
@@ -26,6 +25,7 @@ namespace EntidadesArchivos
         /// <exception cref="Exception"></exception>
         public static void EscribirT(T datos, string archivo)
         {
+            
             string completo = ruta + @"\Serializadora" + archivo + ".xml";
             try
             {
