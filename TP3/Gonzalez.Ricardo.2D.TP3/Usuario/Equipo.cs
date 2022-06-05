@@ -14,16 +14,17 @@ namespace EntidadesTp3
         private int id;
         private static int lasId;
         private string nombreEquipo;
-        DateTime FechaDePgo;
+        DateTime fechaDePgo;
         double montoPagado;
 
         static Equipo()
         {
             lasId = 1;
+            
         }
         public Equipo()
         {
-
+            fechaDePgo = new DateTime();
         }
         public Equipo( string nombreEquipo)
         {
@@ -36,12 +37,17 @@ namespace EntidadesTp3
         public int Id { get => id; set => id = value; }
         public static int LasId { get => lasId; set => lasId = value; }
         public double MontoPagado { get => montoPagado; set => montoPagado = value; }
-        public DateTime FechaDePgo1 { get => FechaDePgo; set => FechaDePgo = value; }
+        public DateTime FechaDePgo1 
+            { get => fechaDePgo;
+            set {
+                fechaDePgo = value;
+            }
+        }
 
         public void PagoMensual(string monto)
         {
             this.montoPagado = double.Parse(monto);
-            this.FechaDePgo = DateTime.Now;
+            this.fechaDePgo = DateTime.Now;
            
         }
 

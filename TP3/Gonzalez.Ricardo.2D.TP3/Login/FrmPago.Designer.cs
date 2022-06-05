@@ -35,9 +35,10 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(238, 43);
+            this.btnAceptar.Location = new System.Drawing.Point(340, 72);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(100, 30);
+            this.btnAceptar.Size = new System.Drawing.Size(143, 50);
             this.btnAceptar.TabIndex = 0;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -45,29 +46,35 @@
             // 
             // txtbMonto
             // 
-            this.txtbMonto.Location = new System.Drawing.Point(78, 48);
+            this.txtbMonto.Location = new System.Drawing.Point(111, 80);
+            this.txtbMonto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbMonto.Name = "txtbMonto";
             this.txtbMonto.PlaceholderText = "Monto";
-            this.txtbMonto.Size = new System.Drawing.Size(100, 23);
+            this.txtbMonto.Size = new System.Drawing.Size(141, 31);
             this.txtbMonto.TabIndex = 1;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(93, 14);
+            this.lblNombre.Location = new System.Drawing.Point(133, 23);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(38, 15);
+            this.lblNombre.Size = new System.Drawing.Size(59, 25);
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "label1";
             // 
             // FrmPago
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 116);
+            this.BackgroundImage = global::FormsTP3.Properties.Resources.cespedcanchafutbolh2estossonloscuidadosidealesparateneruncespednaturaltodoelano;
+            this.ClientSize = new System.Drawing.Size(626, 193);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtbMonto);
             this.Controls.Add(this.btnAceptar);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmPago";
             this.Text = "FrmPago";
             this.Load += new System.EventHandler(this.FrmPago_Load);

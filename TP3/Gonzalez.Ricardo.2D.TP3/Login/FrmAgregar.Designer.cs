@@ -40,45 +40,50 @@
             // 
             // txtbNombre
             // 
-            this.txtbNombre.Location = new System.Drawing.Point(100, 34);
+            this.txtbNombre.Location = new System.Drawing.Point(143, 57);
+            this.txtbNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbNombre.Name = "txtbNombre";
             this.txtbNombre.PlaceholderText = "Nombre";
-            this.txtbNombre.Size = new System.Drawing.Size(146, 23);
+            this.txtbNombre.Size = new System.Drawing.Size(207, 31);
             this.txtbNombre.TabIndex = 0;
             this.txtbNombre.Text = "riky";
             // 
             // txtbApellido
             // 
-            this.txtbApellido.Location = new System.Drawing.Point(100, 63);
+            this.txtbApellido.Location = new System.Drawing.Point(143, 105);
+            this.txtbApellido.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbApellido.Name = "txtbApellido";
             this.txtbApellido.PlaceholderText = "Apellido";
-            this.txtbApellido.Size = new System.Drawing.Size(146, 23);
+            this.txtbApellido.Size = new System.Drawing.Size(207, 31);
             this.txtbApellido.TabIndex = 1;
             this.txtbApellido.Text = "gonza";
             // 
             // txtbDni
             // 
-            this.txtbDni.Location = new System.Drawing.Point(100, 92);
+            this.txtbDni.Location = new System.Drawing.Point(143, 153);
+            this.txtbDni.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbDni.Name = "txtbDni";
             this.txtbDni.PlaceholderText = "DNI";
-            this.txtbDni.Size = new System.Drawing.Size(146, 23);
+            this.txtbDni.Size = new System.Drawing.Size(207, 31);
             this.txtbDni.TabIndex = 2;
             this.txtbDni.Text = "35600032";
             // 
             // txtbEdad
             // 
-            this.txtbEdad.Location = new System.Drawing.Point(100, 121);
+            this.txtbEdad.Location = new System.Drawing.Point(143, 202);
+            this.txtbEdad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbEdad.Name = "txtbEdad";
             this.txtbEdad.PlaceholderText = "Edad";
-            this.txtbEdad.Size = new System.Drawing.Size(146, 23);
+            this.txtbEdad.Size = new System.Drawing.Size(207, 31);
             this.txtbEdad.TabIndex = 3;
             this.txtbEdad.Text = "33";
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(100, 253);
+            this.btnAgregar.Location = new System.Drawing.Point(143, 422);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(146, 28);
+            this.btnAgregar.Size = new System.Drawing.Size(209, 47);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -87,37 +92,35 @@
             // cmbTipoUsuario
             // 
             this.cmbTipoUsuario.FormattingEnabled = true;
-            this.cmbTipoUsuario.Location = new System.Drawing.Point(100, 170);
-            this.cmbTipoUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbTipoUsuario.Location = new System.Drawing.Point(143, 283);
             this.cmbTipoUsuario.Name = "cmbTipoUsuario";
-            this.cmbTipoUsuario.Size = new System.Drawing.Size(146, 23);
+            this.cmbTipoUsuario.Size = new System.Drawing.Size(207, 33);
             this.cmbTipoUsuario.TabIndex = 6;
+            this.cmbTipoUsuario.SelectedIndexChanged += new System.EventHandler(this.cmbTipoUsuario_SelectedIndexChanged);
             // 
             // cmbEquipo
             // 
             this.cmbEquipo.FormattingEnabled = true;
-            this.cmbEquipo.Location = new System.Drawing.Point(100, 214);
-            this.cmbEquipo.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbEquipo.Location = new System.Drawing.Point(143, 357);
             this.cmbEquipo.Name = "cmbEquipo";
-            this.cmbEquipo.Size = new System.Drawing.Size(146, 23);
+            this.cmbEquipo.Size = new System.Drawing.Size(207, 33);
             this.cmbEquipo.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(100, 56);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(143, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 15);
+            this.label1.Size = new System.Drawing.Size(224, 25);
             this.label1.TabIndex = 8;
             this.label1.Text = "Ingrese nombre de equipo";
             this.label1.Visible = false;
             // 
-            // FrmAgregarUsuarios
+            // FrmAgregar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 290);
+            this.ClientSize = new System.Drawing.Size(460, 483);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbEquipo);
             this.Controls.Add(this.cmbTipoUsuario);
@@ -126,7 +129,8 @@
             this.Controls.Add(this.txtbDni);
             this.Controls.Add(this.txtbApellido);
             this.Controls.Add(this.txtbNombre);
-            this.Name = "FrmAgregarUsuarios";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "FrmAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarUsuario";
             this.Load += new System.EventHandler(this.AgregarUsuario_Load);

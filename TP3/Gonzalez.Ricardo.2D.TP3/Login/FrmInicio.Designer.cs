@@ -38,9 +38,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(9, 12);
+            this.button1.Location = new System.Drawing.Point(13, 20);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 35);
+            this.button1.Size = new System.Drawing.Size(157, 58);
             this.button1.TabIndex = 1;
             this.button1.Text = "Usuarios";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // 
             // btnAgregarEquipo
             // 
-            this.btnAgregarEquipo.Location = new System.Drawing.Point(9, 53);
+            this.btnAgregarEquipo.Location = new System.Drawing.Point(13, 88);
+            this.btnAgregarEquipo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregarEquipo.Name = "btnAgregarEquipo";
-            this.btnAgregarEquipo.Size = new System.Drawing.Size(110, 35);
+            this.btnAgregarEquipo.Size = new System.Drawing.Size(157, 58);
             this.btnAgregarEquipo.TabIndex = 8;
             this.btnAgregarEquipo.Text = "Equipos";
             this.btnAgregarEquipo.UseVisualStyleBackColor = true;
@@ -58,19 +60,21 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(405, 12);
+            this.button2.Location = new System.Drawing.Point(590, 31);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 76);
+            this.button2.Size = new System.Drawing.Size(109, 71);
             this.button2.TabIndex = 10;
-            this.button2.Text = "Registrar Pagos \r\nEquipo\r\n y\r\n Usuarios";
+            this.button2.Text = "Registrar Pagos\r\n";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.btnGestionar_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(405, 169);
+            this.btnGuardar.Location = new System.Drawing.Point(579, 375);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(106, 29);
+            this.btnGuardar.Size = new System.Drawing.Size(151, 48);
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.Text = "Guardar xml";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -78,9 +82,10 @@
             // 
             // btnCargarDatos
             // 
-            this.btnCargarDatos.Location = new System.Drawing.Point(405, 134);
+            this.btnCargarDatos.Location = new System.Drawing.Point(579, 316);
+            this.btnCargarDatos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCargarDatos.Name = "btnCargarDatos";
-            this.btnCargarDatos.Size = new System.Drawing.Size(106, 29);
+            this.btnCargarDatos.Size = new System.Drawing.Size(151, 48);
             this.btnCargarDatos.TabIndex = 12;
             this.btnCargarDatos.Text = "CargarDatos";
             this.btnCargarDatos.UseVisualStyleBackColor = true;
@@ -88,9 +93,10 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(432, 288);
+            this.btnSalir.Location = new System.Drawing.Point(33, 468);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 34);
+            this.btnSalir.Size = new System.Drawing.Size(107, 57);
             this.btnSalir.TabIndex = 13;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -98,11 +104,11 @@
             // 
             // FrmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FormsTP3.Properties.Resources.cespedcanchafutbolh2estossonloscuidadosidealesparateneruncespednaturaltodoelano;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(519, 334);
+            this.ClientSize = new System.Drawing.Size(741, 557);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCargarDatos);
             this.Controls.Add(this.btnGuardar);
@@ -110,6 +116,7 @@
             this.Controls.Add(this.btnAgregarEquipo);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

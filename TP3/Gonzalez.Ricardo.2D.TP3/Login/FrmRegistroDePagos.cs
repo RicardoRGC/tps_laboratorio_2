@@ -4,21 +4,26 @@ using EntidadesTp3;
 
 namespace FormsTP3
 {
-    public partial class RegistroDePagos : Form
+    public partial class FrmRegistroDePagos : Form
     {
         private ListViewItem listItem;
-        public RegistroDePagos()
+        public FrmRegistroDePagos()
         {
             InitializeComponent();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            EntidadesTp3.RegistroDePagos gestionarPago = EntidadesTp3.RegistroDePagos.BuscarUsuario(txtbBuscar.Text);
+            
+            RegistroDePagos gestionarPago = RegistroDePagos.BuscarUsuario(txtbBuscar.Text);
 
             if (gestionarPago != null)
             {
                 CargarltvPagos(gestionarPago);
+            }
+            else
+            {
+                CargarLtvListaDePagos();
             }
 
 
@@ -37,10 +42,10 @@ namespace FormsTP3
             if (pago.Usuario1 is not null)
             {
                 listItem.SubItems.Add(jugador.MontoPagado.ToString());
-                if (jugador.FechaDePgo1 != DateTime.MinValue)
+                if (jugador.FechaDePago1 != DateTime.MinValue)
                 {
 
-                    listItem.SubItems.Add(jugador.FechaDePgo1.ToString());
+                    listItem.SubItems.Add(jugador.FechaDePago1.ToString());
                 }
             }
             if (pago.Equipo is not null)
@@ -71,10 +76,10 @@ namespace FormsTP3
                 if (item.Usuario1 is not null)
                 {
                     listItem.SubItems.Add(jugador.MontoPagado.ToString());
-                    if (jugador.FechaDePgo1 != DateTime.MinValue)
+                    if (jugador.FechaDePago1 != DateTime.MinValue)
                     {
 
-                        listItem.SubItems.Add(jugador.FechaDePgo1.ToString());
+                        listItem.SubItems.Add(jugador.FechaDePago1.ToString());
                     }
                 }
                 if (item.Equipo is not null)
@@ -123,6 +128,11 @@ namespace FormsTP3
                 }
             }
                 CargarLtvListaDePagos();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

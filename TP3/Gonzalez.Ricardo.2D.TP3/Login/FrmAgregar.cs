@@ -166,5 +166,14 @@ namespace FormsTP3
 
             }
         }
+
+        private void cmbTipoUsuario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cmbTipoUsuario.Text == "Arbitro")
+            {
+                cmbEquipo.Enabled = false;
+
+            }
+        }
     }
 }

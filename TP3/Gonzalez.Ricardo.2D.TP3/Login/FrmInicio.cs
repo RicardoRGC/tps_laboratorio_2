@@ -27,7 +27,7 @@ namespace FormsTP3
                 }
                 else
                 {
-                    MessageBox.Show("Primero tiene q registar un equipo.");
+                    MessageBox.Show("Debe Agregar Un Equipo.");
                 }
             }
             catch (Exception)
@@ -68,7 +68,7 @@ namespace FormsTP3
 
         private void btnGestionar_Click(object sender, EventArgs e)
         {
-            RegistroDePagos gestionarPagos = new RegistroDePagos();
+            FrmRegistroDePagos gestionarPagos = new FrmRegistroDePagos();
             gestionarPagos.ShowDialog();
 
         }
@@ -77,7 +77,6 @@ namespace FormsTP3
         {
             try
             {
-
                 ClaseSerializadora<List<Equipo>>.EscribirT(LigaFutbol<Equipo>.listaLigaStatica, "ListaEquipo");
                 ClaseSerializadora<List<Usuario>>.EscribirT(LigaFutbol<Usuario>.listaLigaStatica, "ListaUsuarios");
             }
@@ -92,8 +91,9 @@ namespace FormsTP3
         }
         public void CargaDeDatos()
         {
-            LigaFutbol<Usuario>.listaLigaStatica.AddRange(ClaseSerializadora<List<Usuario>>.LeerListaT("ListaUsuarios"));
+
             LigaFutbol<Equipo>.listaLigaStatica.AddRange(ClaseSerializadora<List<Equipo>>.LeerListaT("ListaEquipo"));
+            LigaFutbol<Usuario>.listaLigaStatica.AddRange(ClaseSerializadora<List<Usuario>>.LeerListaT("ListaUsuarios"));
 
             EntidadesTp3.RegistroDePagos.AgregarLIsta(LigaFutbol<Usuario>.listaLigaStatica);
             EntidadesTp3.RegistroDePagos.AgregarLIsta(LigaFutbol<Equipo>.listaLigaStatica);

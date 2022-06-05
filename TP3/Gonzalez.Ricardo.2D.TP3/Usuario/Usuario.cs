@@ -116,9 +116,13 @@ namespace EntidadesTp3
                 {
                     Archivo.GuardarLastIdUsuario(Usuario.LastLegajo.ToString());
 
-                    if (!RegistroDePagos.AgregarGestionarPago(usuarioNew.Legajo, usuarioNew.Nombre, (Jugador)usuarioNew))
+                    if(usuarioNew is Jugador)
                     {
-                        return false;
+                        if (!RegistroDePagos.AgregarGestionarPago(usuarioNew.Legajo, usuarioNew.Nombre, (Jugador)usuarioNew))
+                        {
+                            return false;
+                        }
+
                     }
                 }
                 else

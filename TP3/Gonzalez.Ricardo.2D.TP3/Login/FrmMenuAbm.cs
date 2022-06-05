@@ -40,10 +40,11 @@ namespace FormsTP3
                 cmbFiltrarUsuarios.Items.Add("Arbitro");
 
 
-                dgvListado.DataSource = LigaFutbol<Usuario>.listaLigaStatica;
+                //dgvListado.DataSource = LigaFutbol<Usuario>.listaLigaStatica;
+                dgvListado.DataSource = LigaFutbol<Jugador>.listaLigaStatica;
 
                 DataGridViewColumn dataGridViewColumn = dgvListado.Columns[5];
-                dataGridViewColumn.Visible = false;
+               // dataGridViewColumn.Visible = false;
 
                 cmbFiltrarUsuarios.SelectedIndex = 0;
 

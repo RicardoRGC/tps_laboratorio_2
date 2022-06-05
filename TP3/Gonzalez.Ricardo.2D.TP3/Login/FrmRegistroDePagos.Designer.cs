@@ -1,6 +1,6 @@
 ﻿namespace FormsTP3
 {
-    partial class RegistroDePagos
+    partial class FrmRegistroDePagos
     {
         /// <summary>
         /// Required designer variable.
@@ -38,21 +38,24 @@
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbBuscar
             // 
-            this.txtbBuscar.Location = new System.Drawing.Point(12, 12);
+            this.txtbBuscar.Location = new System.Drawing.Point(17, 20);
+            this.txtbBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtbBuscar.Name = "txtbBuscar";
             this.txtbBuscar.PlaceholderText = "Buscar";
-            this.txtbBuscar.Size = new System.Drawing.Size(126, 23);
+            this.txtbBuscar.Size = new System.Drawing.Size(178, 31);
             this.txtbBuscar.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(178, 12);
+            this.button1.Location = new System.Drawing.Point(254, 20);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(107, 38);
             this.button1.TabIndex = 2;
             this.button1.Text = "buscar";
             this.button1.UseVisualStyleBackColor = true;
@@ -60,9 +63,10 @@
             // 
             // btnPagos
             // 
-            this.btnPagos.Location = new System.Drawing.Point(60, 232);
+            this.btnPagos.Location = new System.Drawing.Point(86, 387);
+            this.btnPagos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPagos.Name = "btnPagos";
-            this.btnPagos.Size = new System.Drawing.Size(122, 41);
+            this.btnPagos.Size = new System.Drawing.Size(174, 68);
             this.btnPagos.TabIndex = 4;
             this.btnPagos.Text = "Registrar Pago";
             this.btnPagos.UseVisualStyleBackColor = true;
@@ -70,9 +74,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(283, 232);
+            this.button2.Location = new System.Drawing.Point(404, 387);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 41);
+            this.button2.Size = new System.Drawing.Size(160, 68);
             this.button2.TabIndex = 5;
             this.button2.Text = "Historial de Pago";
             this.button2.UseVisualStyleBackColor = true;
@@ -80,9 +85,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 43);
+            this.label1.Location = new System.Drawing.Point(67, 72);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 15);
+            this.label1.Size = new System.Drawing.Size(252, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "Nombre de item Seleccionado";
             // 
@@ -95,9 +101,10 @@
             this.columnHeader4});
             this.ltvListaGestiones.FullRowSelect = true;
             this.ltvListaGestiones.HideSelection = false;
-            this.ltvListaGestiones.Location = new System.Drawing.Point(47, 61);
+            this.ltvListaGestiones.Location = new System.Drawing.Point(67, 102);
+            this.ltvListaGestiones.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ltvListaGestiones.Name = "ltvListaGestiones";
-            this.ltvListaGestiones.Size = new System.Drawing.Size(376, 137);
+            this.ltvListaGestiones.Size = new System.Drawing.Size(535, 226);
             this.ltvListaGestiones.TabIndex = 7;
             this.ltvListaGestiones.UseCompatibleStateImageBehavior = false;
             this.ltvListaGestiones.View = System.Windows.Forms.View.Details;
@@ -109,31 +116,47 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "Nombre";
-            this.columnHeader2.Width = 100;
+            this.columnHeader2.Width = 150;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Monto";
-            this.columnHeader3.Width = 100;
+            this.columnHeader3.Width = 120;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Fecha del Pago";
-            this.columnHeader4.Width = 100;
+            this.columnHeader4.Width = 200;
             // 
-            // FrmGestionar
+            // button3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.button3.Font = new System.Drawing.Font("Haettenschweiler", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(629, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(36, 39);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "X";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // FrmRegistroDePagos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 296);
+            this.BackgroundImage = global::FormsTP3.Properties.Resources.FondoMessiCR;
+            this.ClientSize = new System.Drawing.Size(677, 499);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.ltvListaGestiones);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnPagos);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtbBuscar);
-            this.Name = "FrmGestionar";
-            this.Text = "GestionarPagos";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "FrmRegistroDePagos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Registro de Pagos";
             this.Load += new System.EventHandler(this.FrmGestionarPagos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -152,5 +175,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.Button button3;
     }
 }
