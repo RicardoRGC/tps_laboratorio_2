@@ -31,7 +31,7 @@
             this.txtbBuscar = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnPagos = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnHistorialPagos = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ltvListaGestiones = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
@@ -72,15 +72,16 @@
             this.btnPagos.UseVisualStyleBackColor = true;
             this.btnPagos.Click += new System.EventHandler(this.btnPagos_Click);
             // 
-            // button2
+            // btnHistorialPagos
             // 
-            this.button2.Location = new System.Drawing.Point(404, 387);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 68);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Historial de Pago";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHistorialPagos.Location = new System.Drawing.Point(404, 387);
+            this.btnHistorialPagos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHistorialPagos.Name = "btnHistorialPagos";
+            this.btnHistorialPagos.Size = new System.Drawing.Size(160, 68);
+            this.btnHistorialPagos.TabIndex = 5;
+            this.btnHistorialPagos.Text = "Historial de Pago";
+            this.btnHistorialPagos.UseVisualStyleBackColor = true;
+            this.btnHistorialPagos.Click += new System.EventHandler(this.btnHistorialPagos_Click);
             // 
             // label1
             // 
@@ -148,7 +149,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.ltvListaGestiones);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnHistorialPagos);
             this.Controls.Add(this.btnPagos);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtbBuscar);
@@ -168,7 +169,7 @@
         private System.Windows.Forms.TextBox txtbBuscar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnPagos;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnHistorialPagos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView ltvListaGestiones;
         private System.Windows.Forms.ColumnHeader columnHeader1;

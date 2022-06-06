@@ -27,13 +27,14 @@ namespace FormsTP3
                 }
                 else
                 {
+
                     MessageBox.Show("Debe Agregar Un Equipo.");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message);
             }
 
 
@@ -54,6 +55,10 @@ namespace FormsTP3
 
                 MessageBox.Show(ex.Message);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
@@ -61,15 +66,32 @@ namespace FormsTP3
 
         private void btnAgregarEquipo_Click(object sender, EventArgs e)
         {
+            try
+            {
+
             FrmMenuAbm menuListado = new FrmMenuAbm(false);
 
             menuListado.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void btnGestionar_Click(object sender, EventArgs e)
         {
+            try
+            {
+
             FrmRegistroDePagos gestionarPagos = new FrmRegistroDePagos();
             gestionarPagos.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
@@ -86,17 +108,28 @@ namespace FormsTP3
                 MessageBox.Show(ex.Message);
             }
 
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
 
         }
         public void CargaDeDatos()
         {
+            try
+            {
 
             LigaFutbol<Equipo>.listaLigaStatica.AddRange(ClaseSerializadora<List<Equipo>>.LeerListaT("ListaEquipo"));
             LigaFutbol<Usuario>.listaLigaStatica.AddRange(ClaseSerializadora<List<Usuario>>.LeerListaT("ListaUsuarios"));
 
             EntidadesTp3.RegistroDePagos.AgregarLIsta(LigaFutbol<Usuario>.listaLigaStatica);
             EntidadesTp3.RegistroDePagos.AgregarLIsta(LigaFutbol<Equipo>.listaLigaStatica);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void btnCargarDatos_Click(object sender, EventArgs e)
         {
@@ -111,6 +144,11 @@ namespace FormsTP3
             catch (ArchivoInvalidoException ex)
             {
 
+                MessageBox.Show(ex.Message);
+            }
+  
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
         }

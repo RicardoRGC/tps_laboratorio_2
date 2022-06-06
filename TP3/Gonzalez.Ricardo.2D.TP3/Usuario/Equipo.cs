@@ -50,7 +50,12 @@ namespace EntidadesTp3
             this.fechaDePgo = DateTime.Now;
            
         }
-
+        /// <summary>
+        /// Devuelve el id del Equipo ,Busca por nombre de equipo
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <returns></returns>
+        /// <exception cref="DatoInvalidoExeptionEquipo"></exception>
         public static int BuscarEquipo(string nombre)
         {
             try
@@ -71,6 +76,12 @@ namespace EntidadesTp3
             }
             return 0;
         } 
+        /// <summary>
+        /// busca el quipo por el nombre y retorna el objeto equipo.
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <returns></returns>
+        /// <exception cref="DatoInvalidoExeptionEquipo"></exception>
         public static Equipo RetornaEquipo(string nombre)
         {
             try
@@ -91,6 +102,12 @@ namespace EntidadesTp3
             }
             return null;
         }
+        /// <summary>
+        /// busca el equipo por id 
+        /// </summary>
+        /// <param name="idEquipo"></param>
+        /// <returns>Retorna el nombre del Equipo </returns>
+        /// <exception cref="DatoInvalidoExeptionEquipo"></exception>
         public static string BuscarEquipo(int idEquipo)
         {
             try
@@ -111,7 +128,11 @@ namespace EntidadesTp3
             }
             return "No Existe";
         }
-
+        /// <summary>
+        /// Agrega instancia un Equipo y lo Agrega a la lista de la liga, Guarda el ultimo id y lo agrega al registro de pagos.
+        /// </summary>
+        /// <param name="nombre"></param>
+        /// <returns>Retorna true si la Operacion fue exitisa </returns>
         public static bool AgregarEquipo(string nombre)
         {
             Equipo equipo = new Equipo(nombre);
@@ -121,6 +142,7 @@ namespace EntidadesTp3
                 if(LigaFutbol<Equipo>.listaLigaStatica+equipo)
                 {
                     Archivo.GuardarLastIdEquipo(Equipo.LasId.ToString());
+
                     RegistroDePagos.AgregarGestionarPago(equipo.id, equipo.nombreEquipo,equipo);
 
                     return true;
@@ -184,17 +206,6 @@ namespace EntidadesTp3
                 return true;
             }
             return false;
-        }
-        public static void CargarEquipos()
-             {
-            Equipo equipo = new Equipo("River");
-            Equipo equipo1 = new Equipo("boca");
-            Equipo equipo2 = new Equipo("racing");
-            
-            LigaFutbol<Equipo>.listaLigaStatica.Add(equipo);
-            LigaFutbol<Equipo>.listaLigaStatica.Add(equipo1);
-            LigaFutbol<Equipo>.listaLigaStatica.Add(equipo2);
-       
         }
 
 

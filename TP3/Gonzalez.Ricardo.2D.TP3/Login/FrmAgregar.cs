@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using EntidadesArchivos;
 using EntidadesExcepciones;
 using EntidadesTp3;
 
@@ -20,19 +19,43 @@ namespace FormsTP3
 
         public FrmAgregar(bool sonUsuarios) : this()
         {
-            this.sonUsuarios = sonUsuarios;
+            try
+            {
+                this.sonUsuarios = sonUsuarios;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public FrmAgregar(bool sonUsuarios, Usuario usuario) : this(sonUsuarios)
         {
-            this.usuario = usuario;
-            this.btnAgregar.Text = "Modificar";
+            try
+            {
+                this.usuario = usuario;
+                this.btnAgregar.Text = "Modificar";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
         public FrmAgregar(bool sonUsuarios, Equipo equipo) : this(sonUsuarios)
         {
-            this.equipo1 = equipo;
-            this.btnAgregar.Text = "Modificar";
+            try
+            {
+
+                this.equipo1 = equipo;
+                this.btnAgregar.Text = "Modificar";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
@@ -57,10 +80,10 @@ namespace FormsTP3
                         }
                     }
                     else
-                    {                        
+                    {
                         if (sonUsuarios)
                         {
-                           if( Usuario.AgregarUsuario(cmbTipoUsuario.Text,txtbApellido.Text,txtbNombre.Text,txtbDni.Text,txtbEdad.Text,cmbEquipo.Text))
+                            if (Usuario.AgregarUsuario(cmbTipoUsuario.Text, txtbApellido.Text, txtbNombre.Text, txtbDni.Text, txtbEdad.Text, cmbEquipo.Text))
                             {
                                 MessageBox.Show("agregado correctamente");
                             }
@@ -89,7 +112,12 @@ namespace FormsTP3
             {
                 MessageBox.Show(ex.Message);
             }
-            catch(DatoInvalidoexceptionModificarUsuario ex)
+            catch (DatoInvalidoexceptionModificarUsuario ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -98,81 +126,97 @@ namespace FormsTP3
 
         private void AgregarUsuario_Load(object sender, EventArgs e)
         {
-            if (sonUsuarios)
+            try
             {
-
-                cmbTipoUsuario.Items.Add("Jugador");
-                cmbTipoUsuario.Items.Add("DirectorTecnico");
-                cmbTipoUsuario.Items.Add("Arbitro");
-                foreach (Equipo item in LigaFutbol<Equipo>.listaLigaStatica)
+                if (sonUsuarios)
                 {
-                    cmbEquipo.Items.Add(item.NombreEquipo);
-                }
 
-
-                if (btnAgregar.Text == "Modificar")
-                {
-                    if (sonUsuarios)
+                    cmbTipoUsuario.Items.Add("Jugador");
+                    cmbTipoUsuario.Items.Add("DirectorTecnico");
+                    cmbTipoUsuario.Items.Add("Arbitro");
+                    foreach (Equipo item in LigaFutbol<Equipo>.listaLigaStatica)
                     {
-                        txtbApellido.Text = usuario.Apellido;
-                        txtbNombre.Text = usuario.Nombre;
-                        txtbDni.Text = usuario.Dni.ToString();
-                        txtbEdad.Text = usuario.Edad.ToString();
-                        cmbEquipo.Text = Equipo.BuscarEquipo(usuario.IdEquipo);
+                        cmbEquipo.Items.Add(item.NombreEquipo);
+                    }
 
-                        if (usuario is Jugador)
+
+                    if (btnAgregar.Text == "Modificar")
+                    {
+                        if (sonUsuarios)
                         {
-                            cmbTipoUsuario.Text = "Jugador";
-                        }
-                        else
-                        {
-                            if (usuario is DirectorTecnico)
+                            txtbApellido.Text = usuario.Apellido;
+                            txtbNombre.Text = usuario.Nombre;
+                            txtbDni.Text = usuario.Dni.ToString();
+                            txtbEdad.Text = usuario.Edad.ToString();
+                            cmbEquipo.Text = Equipo.BuscarEquipo(usuario.IdEquipo);
+
+                            if (usuario is Jugador)
                             {
-                                cmbTipoUsuario.Text = "DirectorTecnico";
+                                cmbTipoUsuario.Text = "Jugador";
                             }
                             else
                             {
-                                if (usuario is Arbitro)
+                                if (usuario is DirectorTecnico)
                                 {
-                                    cmbTipoUsuario.Text = "Arbitro";
-                                    cmbEquipo.Visible = false;
+                                    cmbTipoUsuario.Text = "DirectorTecnico";
+                                }
+                                else
+                                {
+                                    if (usuario is Arbitro)
+                                    {
+                                        cmbTipoUsuario.Text = "Arbitro";
+                                        cmbEquipo.Visible = false;
+                                    }
                                 }
                             }
+
+                        }
+                        else
+                        {
+                            txtbNombre.Text = equipo1.NombreEquipo;
+
                         }
 
+
+                        cmbTipoUsuario.Enabled = false;
+
+
                     }
-                    else
-                    {
-                        txtbNombre.Text = equipo1.NombreEquipo;
-
-                    }
-
-
-                    cmbTipoUsuario.Enabled = false;
-
 
                 }
+                else
+                {
+                    txtbDni.Visible = false;
+                    txtbEdad.Visible = false;
 
+                    txtbApellido.Visible = false;
+                    cmbEquipo.Visible = false;
+                    cmbTipoUsuario.Visible = false;
+                    label1.Visible = true;
+
+                }
             }
-            else
+            catch (Exception ex)
             {
-                txtbDni.Visible = false;
-                txtbEdad.Visible = false;
-
-                txtbApellido.Visible = false;
-                cmbEquipo.Visible = false;
-                cmbTipoUsuario.Visible = false;
-                label1.Visible = true;
-
+                MessageBox.Show(ex.Message);
             }
+
         }
 
         private void cmbTipoUsuario_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(cmbTipoUsuario.Text == "Arbitro")
+            try
             {
-                cmbEquipo.Enabled = false;
+                if (cmbTipoUsuario.Text == "Arbitro")
+                {
+                    cmbEquipo.Enabled = false;
 
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

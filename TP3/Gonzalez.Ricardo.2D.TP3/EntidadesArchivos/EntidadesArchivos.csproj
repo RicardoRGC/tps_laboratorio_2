@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Equipos.xml" />
     <None Remove="LastId.txt" />
     <None Remove="LastIdEquipo.txt" />
     <None Remove="SerializadoraListaEquipo.xml" />
@@ -13,9 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="Equipos.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </AdditionalFiles>
     <AdditionalFiles Include="LastId.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </AdditionalFiles>

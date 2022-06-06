@@ -118,7 +118,7 @@ namespace EntidadesTp3
 
                     if(usuarioNew is Jugador)
                     {
-                        if (!RegistroDePagos.AgregarGestionarPago(usuarioNew.Legajo, usuarioNew.Nombre, (Jugador)usuarioNew))
+                        if (!RegistroDePagos.AgregarRegistroDePago(usuarioNew.Legajo, usuarioNew.Nombre, (Jugador)usuarioNew))
                         {
                             return false;
                         }

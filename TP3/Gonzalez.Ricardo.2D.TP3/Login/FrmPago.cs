@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using EntidadesTp3;
 
@@ -21,48 +14,64 @@ namespace FormsTP3
             InitializeComponent();
         }
 
-        public FrmPago(Jugador usuario):this()
+        public FrmPago(Jugador usuario) : this()
         {
             this.jugador = usuario;
         }
 
-        public FrmPago(Equipo equipo):this()
+        public FrmPago(Equipo equipo) : this()
         {
             this.equipo = equipo;
         }
 
         private void FrmPago_Load(object sender, EventArgs e)
         {
-            if(jugador is not null)
+            try
             {
 
-            lblNombre.Text = jugador.Nombre;
+                if (jugador is not null)
+                {
+
+                    lblNombre.Text = jugador.Nombre;
+                }
+                if (equipo is not null)
+                {
+                    lblNombre.Text = equipo.NombreEquipo;
+
+                }
             }
-            if(equipo is not null)
+            catch (Exception ex)
             {
-            lblNombre.Text = equipo.NombreEquipo;
-
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if(!string.IsNullOrWhiteSpace(txtbMonto.Text))
+            try
             {
-                if(jugador is not null)
+
+                if (!string.IsNullOrWhiteSpace(txtbMonto.Text))
                 {
-                    jugador.PagoMensual(txtbMonto.Text);               
+                    if (jugador is not null)
+                    {
+                        jugador.PagoMensual(txtbMonto.Text);
+
+                    }
+                    if (equipo is not null)
+                    {
+                        equipo.PagoMensual(txtbMonto.Text);
+                    }
 
                 }
-                if(equipo is not null)
+                else
                 {
-                    equipo.PagoMensual(txtbMonto.Text);
+                    MessageBox.Show("Campos vacios");
                 }
-
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Campos vacios");
+                MessageBox.Show(ex.Message);
             }
         }
     }

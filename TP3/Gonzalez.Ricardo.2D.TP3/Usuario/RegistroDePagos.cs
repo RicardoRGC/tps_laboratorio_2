@@ -27,8 +27,14 @@ namespace EntidadesTp3
             this.nombre = nombre;
             this.equipo = equipo;
         }
-
-        public static bool AgregarGestionarPago(int idUsuario, string nombre,Jugador usuario)
+        /// <summary>
+        /// Instancia un Registro de Jugador y lo Agrega a la lista Estatica
+        /// </summary>
+        /// <param name="idUsuario"></param>
+        /// <param name="nombre"></param>
+        /// <param name="usuario"></param>
+        /// <returns>Retorna true si todo es Correcto</returns>
+        public static bool AgregarRegistroDePago(int idUsuario, string nombre,Jugador usuario)
         {
             RegistroDePagos gestionarPago = new RegistroDePagos(idUsuario, nombre,usuario);
 
@@ -42,6 +48,13 @@ namespace EntidadesTp3
             }
             return false;
         }
+        /// <summary>
+        /// Instancia un Registro de Jugador y lo Agrega a la lista Estatica
+        /// </summary>
+        /// <param name="idUsuario"></param>
+        /// <param name="nombre"></param>
+        /// <param name="usuario"></param>
+        /// <returns></returns>
         public static bool AgregarGestionarPago(int idUsuario, string nombre,Equipo usuario)
         {
             RegistroDePagos gestionarPago = new RegistroDePagos(idUsuario, nombre,usuario);
@@ -56,7 +69,11 @@ namespace EntidadesTp3
             }
             return false;
         }
-
+        /// <summary>
+        /// Busca por Nombre o Id
+        /// </summary>
+        /// <param name="dato"></param>
+        /// <returns>Retorna el registro </returns>
         public static RegistroDePagos BuscarUsuario(string dato)
         {
             foreach (RegistroDePagos item in LigaFutbol<RegistroDePagos>.listaLigaStatica)
@@ -140,7 +157,7 @@ namespace EntidadesTp3
                 {
                     if (item is Jugador)
                     {
-                        if (RegistroDePagos.AgregarGestionarPago(item.Legajo, item.Nombre, (Jugador)item))
+                        if (RegistroDePagos.AgregarRegistroDePago(item.Legajo, item.Nombre, (Jugador)item))
                         {
 
                         }
