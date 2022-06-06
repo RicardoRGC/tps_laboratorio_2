@@ -28,6 +28,7 @@ namespace FormsTP3
 
                 agregarUsuario.ShowDialog();
 
+                RefrescarBiblioteca();
             }
             catch (Exception ex)
             {
@@ -48,8 +49,8 @@ namespace FormsTP3
                     cmbFiltrarUsuarios.Items.Add("Arbitro");
 
 
-                    //dgvListado.DataSource = LigaFutbol<Usuario>.listaLigaStatica;
-                    dgvListado.DataSource = LigaFutbol<Jugador>.listaLigaStatica;
+                    dgvListado.DataSource = LigaFutbol<Usuario>.listaLigaStatica;
+                  
 
                     DataGridViewColumn dataGridViewColumn = dgvListado.Columns[5];
                     dataGridViewColumn.Visible = false;
@@ -116,6 +117,7 @@ namespace FormsTP3
         {
             try
             {
+            dgvListado.DataSource = null;
 
                 if (sonUsuarios)
                 {
@@ -132,7 +134,6 @@ namespace FormsTP3
             {
                 MessageBox.Show(ex.Message);
             }
-            dgvListado.DataSource = null;
         }
 
         private void cmbFiltrarUsuarios_SelectedIndexChanged(object sender, EventArgs e)

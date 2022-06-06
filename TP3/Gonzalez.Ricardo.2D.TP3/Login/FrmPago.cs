@@ -73,6 +73,7 @@ namespace FormsTP3
             {
                 MessageBox.Show(ex.Message);
             }
+            DialogResult = DialogResult.OK;
         }
     }
 }

@@ -16,6 +16,7 @@ namespace EntidadesTp3
         private string nombreEquipo;
         DateTime fechaDePgo;
         double montoPagado;
+        private string historialDePago;
 
         static Equipo()
         {
@@ -44,11 +45,31 @@ namespace EntidadesTp3
             }
         }
 
+        public string HistorialDePago { get => historialDePago; set => historialDePago = value; }
+
         public void PagoMensual(string monto)
         {
             this.montoPagado = double.Parse(monto);
             this.fechaDePgo = DateTime.Now;
+
+            this.historialDePago += this.Mostrar();
            
+        }
+        public string Mostrar()
+        {
+            return (string)this;
+        }
+        public static explicit operator string(Equipo usuario)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine($"Nombre: {usuario.NombreEquipo}");
+
+            stringBuilder.AppendLine($"Apellido: {usuario.MontoPagado}");
+            stringBuilder.AppendLine($"Apellido: {usuario.fechaDePgo}");
+
+            stringBuilder.AppendLine($"-----------");
+
+            return stringBuilder.ToString();
         }
         /// <summary>
         /// Devuelve el id del Equipo ,Busca por nombre de equipo
@@ -141,7 +162,7 @@ namespace EntidadesTp3
             {
                 if(LigaFutbol<Equipo>.listaLigaStatica+equipo)
                 {
-                    Archivo.GuardarLastIdEquipo(Equipo.LasId.ToString());
+                    Archivo.GuardarLastIdUsuario(Equipo.LasId.ToString());
 
                     RegistroDePagos.AgregarGestionarPago(equipo.id, equipo.nombreEquipo,equipo);
 

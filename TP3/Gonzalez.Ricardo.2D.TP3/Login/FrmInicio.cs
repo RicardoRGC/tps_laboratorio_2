@@ -45,7 +45,7 @@ namespace FormsTP3
             try
             {
                 Usuario.LastLegajo = int.Parse(Archivo.LeerLastId("LastId"));
-                Equipo.LasId = int.Parse(Archivo.LeerLastId("LastIdEquipo"));
+                Equipo.LasId = int.Parse(Archivo.LeerLastId("LastId"));
 
                 btnGuardar.Enabled = false;
 

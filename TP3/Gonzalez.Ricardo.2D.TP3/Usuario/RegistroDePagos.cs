@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Text;
 
 namespace EntidadesTp3
 {
@@ -7,25 +7,53 @@ namespace EntidadesTp3
     {
         int idGention;
         string nombre;
-        Jugador Usuario;
+        Jugador jugador;
         Equipo equipo;
 
         public int IdGention { get => idGention; set => idGention = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public Jugador Usuario1 { get => Usuario;  }
+        public Jugador Usuario1 { get => jugador; }
         public Equipo Equipo { get => equipo; }
 
         public RegistroDePagos(int idUsuario, string nombre, Jugador usuario)
         {
             idGention = idUsuario;
             this.nombre = nombre;
-            Usuario = usuario;
+            jugador = usuario;
         }
         public RegistroDePagos(int idUsuario, string nombre, Equipo equipo)
         {
             idGention = idUsuario;
             this.nombre = nombre;
             this.equipo = equipo;
+        }
+        public virtual string Mostrar()
+        {
+            return (string)this;
+        }
+        public static explicit operator string(RegistroDePagos usuario)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine($"Nombre: {usuario.Nombre}");
+            if (usuario.jugador is not null)
+            {
+                stringBuilder.AppendLine($"Apellido: {usuario.jugador.MontoPagado}");
+                stringBuilder.AppendLine($"Apellido: {usuario.jugador.FechaDePago1}");
+
+            }
+            else
+            {
+                if (usuario.equipo is not null)
+                {
+                    stringBuilder.AppendLine($"Apellido: {usuario.equipo.MontoPagado}");
+                    stringBuilder.AppendLine($"Apellido: {usuario.equipo.FechaDePgo1}");
+
+                }
+            }
+
+            stringBuilder.AppendLine($"-----------");
+
+            return stringBuilder.ToString();
         }
         /// <summary>
         /// Instancia un Registro de Jugador y lo Agrega a la lista Estatica
@@ -34,9 +62,9 @@ namespace EntidadesTp3
         /// <param name="nombre"></param>
         /// <param name="usuario"></param>
         /// <returns>Retorna true si todo es Correcto</returns>
-        public static bool AgregarRegistroDePago(int idUsuario, string nombre,Jugador usuario)
+        public static bool AgregarRegistroDePago(int idUsuario, string nombre, Jugador usuario)
         {
-            RegistroDePagos gestionarPago = new RegistroDePagos(idUsuario, nombre,usuario);
+            RegistroDePagos gestionarPago = new RegistroDePagos(idUsuario, nombre, usuario);
 
             if (gestionarPago is not null)
             {
@@ -55,9 +83,9 @@ namespace EntidadesTp3
         /// <param name="nombre"></param>
         /// <param name="usuario"></param>
         /// <returns></returns>
-        public static bool AgregarGestionarPago(int idUsuario, string nombre,Equipo usuario)
+        public static bool AgregarGestionarPago(int idUsuario, string nombre, Equipo usuario)
         {
-            RegistroDePagos gestionarPago = new RegistroDePagos(idUsuario, nombre,usuario);
+            RegistroDePagos gestionarPago = new RegistroDePagos(idUsuario, nombre, usuario);
 
             if (gestionarPago is not null)
             {
@@ -134,14 +162,19 @@ namespace EntidadesTp3
             }
             return false;
         }
-        public static bool AgregarLIsta(List<Equipo> liga)
+        /// <summary>
+        /// agrega un registro de equipo
+        /// </summary>
+        /// <param name="equipos"></param>
+        /// <returns></returns>
+        public static bool AgregarLIsta(List<Equipo> equipos)
         {
-            if (liga is not null)
+            if (equipos is not null)
             {
-                foreach (Equipo item in liga)
+                foreach (Equipo item in equipos)
                 {
 
-                    if (RegistroDePagos.AgregarGestionarPago(item.Id, item.NombreEquipo,item))
+                    if (RegistroDePagos.AgregarGestionarPago(item.Id, item.NombreEquipo, item))
                     {
 
                     }
@@ -149,6 +182,10 @@ namespace EntidadesTp3
             }
             return false;
         }
+        /// <summary>
+        /// agrega un registro de usuario
+        /// </summary>
+        /// <param name="liga"></param>
         public static void AgregarLIsta(List<Usuario> liga)
         {
             if (liga is not null)

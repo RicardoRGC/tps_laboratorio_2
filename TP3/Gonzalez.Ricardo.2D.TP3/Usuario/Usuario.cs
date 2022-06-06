@@ -182,18 +182,7 @@ namespace EntidadesTp3
 
             return stringBuilder.ToString();
         }
-        //public static void CargarUsuarios()
-        //{         
 
-        //    Usuario usuario=new Jugador("gonzalez"," riky",3546002,31,1);
-        //    Usuario usuario2=new Jugador("gonzalez"," riky",3546002,31,2);
-
-
-        //    LigaFutbol<Usuario>.listaLigaStatica.Add(usuario);
-        //    LigaFutbol<Usuario>.listaLigaStatica.Add(usuario2);
-               
-                       
-        //}
 
         public static bool operator ==(List<Usuario> listaUsuarios, Usuario usuario)
         {
@@ -247,6 +236,10 @@ namespace EntidadesTp3
             }
             return false;
         }
+        /// <summary>
+        /// genera una lista de jugadores
+        /// </summary>
+        /// <returns></returns>
         public static List<Jugador> ListarPorJugadores()
         {
             List<Jugador> jugadores = new List<Jugador>();
@@ -264,6 +257,10 @@ namespace EntidadesTp3
 
             return jugadores;
         }
+        /// <summary>
+        /// genera una lista de arbitro
+        /// </summary>
+        /// <returns></returns>
         public static List<Arbitro> ListarPorArbitro()
         {
             List<Arbitro> suario = new List<Arbitro>();
@@ -281,6 +278,10 @@ namespace EntidadesTp3
 
             return suario;
         }
+        /// <summary>
+        /// genera una lista de la clase directorTecnico
+        /// </summary>
+        /// <returns></returns>
         public static List<DirectorTecnico> ListarPorDirectorTec()
         {
             List<DirectorTecnico> usuario = new List<DirectorTecnico>();

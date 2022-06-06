@@ -193,7 +193,31 @@ namespace FormsTP3
 
         private void btnHistorialPagos_Click(object sender, EventArgs e)
         {
+            FrmHistorialDePago frmListaRegistroPago;
+            foreach (ListViewItem item in ltvListaGestiones.SelectedItems)
+            {
+                RegistroDePagos gestionarPago;
+                gestionarPago = RegistroDePagos.BuscarUsuario(item.Text);
 
+                if (gestionarPago.Usuario1 is not null)
+                {
+
+                      frmListaRegistroPago  = new FrmHistorialDePago(gestionarPago.Usuario1);
+                  
+
+                    frmListaRegistroPago.ShowDialog();
+                }
+                else
+                {
+
+                    frmListaRegistroPago = new FrmHistorialDePago(gestionarPago.Equipo);
+
+
+                    frmListaRegistroPago.ShowDialog();
+                }
+            }
+
+            
         }
     }
 }

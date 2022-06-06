@@ -39,32 +39,7 @@ namespace EntidadesArchivos
             }
 
         }
-        public static void GuardarLastIdEquipo(string id)
-        {
-            
-            string nombrerchivo = @"\LastIdEquipo" +  ".txt";
-
-            string completa = ruta + nombrerchivo;
-    
-            try
-            {
-                if (!Directory.Exists(ruta)) 
-                {
-                    Directory.CreateDirectory(ruta); 
-                }
-
-                using (StreamWriter sw = new StreamWriter(completa)) 
-                {
-                    sw.WriteLine(id);
-                }
-
-            }
-            catch (ArchivoInvalidoIdException ex)
-            {
-                throw new ArchivoInvalidoIdException($"Error en el archivo");
-            }
-
-        }
+      
         public static string LeerLastId(string archivo)
         {
 

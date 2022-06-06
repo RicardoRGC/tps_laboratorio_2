@@ -3,15 +3,15 @@ using EntidadesTp3;
 using EntidadesExcepciones;
 using System;
 
-namespace PruebasTp
+namespace PruebasTpUsuarios
 {
     [TestClass]
     public class TestUsuario
     {
-           
+
         [TestMethod]
         public void DeveriaRetornarDatoInvalidoExceptionUsuario()
-        {           
+        {
             Assert.ThrowsException<DatoInvalidoExceptionUsuario>(() => Usuario.AgregarUsuario("riky", "gonza", "-1", "45", "-5", "4,4"));
         }
         [TestMethod]
@@ -19,8 +19,8 @@ namespace PruebasTp
         {
             //arrange
             Equipo.AgregarEquipo("river");
-            
-            Usuario.AgregarUsuario("Jugador", "gonza", "nombre", "35460002", "35","river" );
+
+            Usuario.AgregarUsuario("Jugador", "gonza", "nombre", "35460002", "35", "river");
 
 
             Assert.IsInstanceOfType(Usuario.BuscarUsuario("nombre"), typeof(Jugador));
@@ -43,7 +43,7 @@ namespace PruebasTp
             Assert.AreEqual(jugador, registroDePagos.Usuario1);
 
         }
-        
+
 
     }
 }

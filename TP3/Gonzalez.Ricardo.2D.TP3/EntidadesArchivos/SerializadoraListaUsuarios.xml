@@ -5,7 +5,7 @@
 		<Apellido>Kerrey</Apellido>
 		<Dni>64463517</Dni>
 		<Edad>20</Edad>
-		<Legajo>1</Legajo>
+		<Legajo>100</Legajo>
 		<IdEquipo>1</IdEquipo>
 		<MontoPagado>2487</MontoPagado>
 		<FechaDePago1>2021-09-21</FechaDePago1>
@@ -15,7 +15,7 @@
 		<Apellido>Hawley</Apellido>
 		<Dni>39223477</Dni>
 		<Edad>47</Edad>
-		<Legajo>2</Legajo>
+		<Legajo>200</Legajo>
 		<IdEquipo>2</IdEquipo>
 		<MontoPagado>3646</MontoPagado>
 		<FechaDePago1>2021-12-20</FechaDePago1>
@@ -25,7 +25,7 @@
 		<Apellido>Basilone</Apellido>
 		<Dni>85364394</Dni>
 		<Edad>21</Edad>
-		<Legajo>3</Legajo>
+		<Legajo>300</Legajo>
 		<IdEquipo>10</IdEquipo>
 		<MontoPagado>2853</MontoPagado>
 		<FechaDePago1>2021-10-23</FechaDePago1>
@@ -35,7 +35,7 @@
 		<Apellido>Bridgeman</Apellido>
 		<Dni>31989968</Dni>
 		<Edad>35</Edad>
-		<Legajo>4</Legajo>
+		<Legajo>400</Legajo>
 		<IdEquipo>1</IdEquipo>
 		<MontoPagado>2375</MontoPagado>
 		<FechaDePago1>2021-06-14</FechaDePago1>
@@ -45,7 +45,7 @@
 		<Apellido>Seywood</Apellido>
 		<Dni>14713550</Dni>
 		<Edad>46</Edad>
-		<Legajo>5</Legajo>
+		<Legajo>50</Legajo>
 		<IdEquipo>2</IdEquipo>
 		<MontoPagado>4911</MontoPagado>
 		<FechaDePago1>2021-11-01</FechaDePago1>
@@ -55,7 +55,7 @@
 		<Apellido>Tomkiss</Apellido>
 		<Dni>3218464</Dni>
 		<Edad>43</Edad>
-		<Legajo>6</Legajo>
+		<Legajo>60</Legajo>
 		<IdEquipo>9</IdEquipo>
 		<MontoPagado>619</MontoPagado>
 		<FechaDePago1>2022-03-31</FechaDePago1>
@@ -65,7 +65,7 @@
 		<Apellido>Osipenko</Apellido>
 		<Dni>51116145</Dni>
 		<Edad>46</Edad>
-		<Legajo>7</Legajo>
+		<Legajo>70</Legajo>
 		<IdEquipo>3</IdEquipo>
 		<MontoPagado>351</MontoPagado>
 		<FechaDePago1>2021-11-04</FechaDePago1>
@@ -75,7 +75,7 @@
 		<Apellido>Hearse</Apellido>
 		<Dni>53586955</Dni>
 		<Edad>23</Edad>
-		<Legajo>8</Legajo>
+		<Legajo>80</Legajo>
 		<IdEquipo>3</IdEquipo>
 		<MontoPagado>1408</MontoPagado>
 		<FechaDePago1>2021-08-30</FechaDePago1>
@@ -85,7 +85,7 @@
 		<Apellido>Hattoe</Apellido>
 		<Dni>74289482</Dni>
 		<Edad>22</Edad>
-		<Legajo>9</Legajo>
+		<Legajo>90</Legajo>
 		<IdEquipo>10</IdEquipo>
 		<MontoPagado>2598</MontoPagado>
 		<FechaDePago1>2021-07-31</FechaDePago1>
@@ -95,7 +95,7 @@
 		<Apellido>Blethin</Apellido>
 		<Dni>74814414</Dni>
 		<Edad>35</Edad>
-		<Legajo>10</Legajo>
+		<Legajo>100</Legajo>
 		<IdEquipo>3</IdEquipo>
 		<MontoPagado>4302</MontoPagado>
 		<FechaDePago1>2021-07-19</FechaDePago1>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace EntidadesTp3
 {
@@ -7,6 +8,7 @@ namespace EntidadesTp3
         private int idEquipo;
         DateTime fechaDePgo;
         double montoPagado;
+        string historialDePago;
 
         public Jugador()
         {
@@ -26,13 +28,31 @@ namespace EntidadesTp3
             }
         }
 
+        public string HistorialDePago { get => historialDePago; set => historialDePago = value; }
 
         public void PagoMensual(string monto)
         {
             this.montoPagado = double.Parse(monto);
             this.fechaDePgo = DateTime.Now;
-        }
 
+            this.historialDePago += this.Mostrar();
+        }
+        public virtual string Mostrar()
+        {
+            return (string)this;
+        }
+        public static explicit operator string(Jugador usuario)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.AppendLine($"Nombre: {usuario.Nombre}");
+
+            stringBuilder.AppendLine($"Apellido: {usuario.MontoPagado}");
+            stringBuilder.AppendLine($"Apellido: {usuario.FechaDePago1}");
+
+            stringBuilder.AppendLine($"-----------");
+
+            return stringBuilder.ToString();
+        }
 
     }
 }

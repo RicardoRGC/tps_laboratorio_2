@@ -86,6 +86,7 @@ namespace FormsTP3
                             if (Usuario.AgregarUsuario(cmbTipoUsuario.Text, txtbApellido.Text, txtbNombre.Text, txtbDni.Text, txtbEdad.Text, cmbEquipo.Text))
                             {
                                 MessageBox.Show("agregado correctamente");
+                                DialogResult = DialogResult.OK;
                             }
 
                         }
@@ -94,6 +95,7 @@ namespace FormsTP3
                             if (Equipo.AgregarEquipo(txtbNombre.Text))
                             {
                                 MessageBox.Show("agregado correctamente");
+                                DialogResult = DialogResult.OK;
                             }
                         }
                     }
@@ -121,7 +123,7 @@ namespace FormsTP3
             {
                 MessageBox.Show(ex.Message);
             }
-            DialogResult = DialogResult.OK;
+           
         }
 
         private void AgregarUsuario_Load(object sender, EventArgs e)
