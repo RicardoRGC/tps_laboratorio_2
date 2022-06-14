@@ -1,0 +1,134 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "EntidadesArchivos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EntidadesExcepciones": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntidadesArchivos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntidadesArchivos.dll": {}
+        }
+      },
+      "EntidadesExcepciones/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/EntidadesExcepciones.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntidadesExcepciones.dll": {}
+        }
+      },
+      "EntidadesTp3/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "EntidadesArchivos": "1.0.0",
+          "EntidadesExcepciones": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EntidadesTp3.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntidadesTp3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntidadesArchivos/1.0.0": {
+      "type": "project",
+      "path": "../EntidadesArchivos/EntidadesArchivos.csproj",
+      "msbuildProject": "../EntidadesArchivos/EntidadesArchivos.csproj"
+    },
+    "EntidadesExcepciones/1.0.0": {
+      "type": "project",
+      "path": "../EntidadesExcepciones/EntidadesExcepciones.csproj",
+      "msbuildProject": "../EntidadesExcepciones/EntidadesExcepciones.csproj"
+    },
+    "EntidadesTp3/1.0.0": {
+      "type": "project",
+      "path": "../Usuario/EntidadesTp3.csproj",
+      "msbuildProject": "../Usuario/EntidadesTp3.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "EntidadesArchivos >= 1.0.0",
+      "EntidadesTp3 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\gonza\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\gonza\\source\\repos\\tps_laboratorio_2\\TP3\\Gonzalez.Ricardo.2D.TP3\\Login\\FormsTP3.csproj",
+      "projectName": "FormsTP3",
+      "projectPath": "C:\\Users\\gonza\\source\\repos\\tps_laboratorio_2\\TP3\\Gonzalez.Ricardo.2D.TP3\\Login\\FormsTP3.csproj",
+      "packagesPath": "C:\\Users\\gonza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gonza\\source\\repos\\tps_laboratorio_2\\TP3\\Gonzalez.Ricardo.2D.TP3\\Login\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\gonza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {
+            "C:\\Users\\gonza\\source\\repos\\tps_laboratorio_2\\TP3\\Gonzalez.Ricardo.2D.TP3\\EntidadesArchivos\\EntidadesArchivos.csproj": {
+              "projectPath": "C:\\Users\\gonza\\source\\repos\\tps_laboratorio_2\\TP3\\Gonzalez.Ricardo.2D.TP3\\EntidadesArchivos\\EntidadesArchivos.csproj"
+            },
+            "C:\\Users\\gonza\\source\\repos\\tps_laboratorio_2\\TP3\\Gonzalez.Ricardo.2D.TP3\\Usuario\\EntidadesTp3.csproj": {
+              "projectPath": "C:\\Users\\gonza\\source\\repos\\tps_laboratorio_2\\TP3\\Gonzalez.Ricardo.2D.TP3\\Usuario\\EntidadesTp3.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

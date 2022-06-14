@@ -1,0 +1,12 @@
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\bin\Debug\net5.0\EntidadesExcepciones.deps.json
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\bin\Debug\net5.0\EntidadesExcepciones.dll
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\bin\Debug\net5.0\EntidadesExcepciones.pdb
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\obj\Debug\net5.0\EntidadesExcepciones.csproj.AssemblyReference.cache
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\obj\Debug\net5.0\EntidadesExcepciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\obj\Debug\net5.0\EntidadesExcepciones.AssemblyInfoInputs.cache
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\obj\Debug\net5.0\EntidadesExcepciones.AssemblyInfo.cs
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\obj\Debug\net5.0\EntidadesExcepciones.csproj.CoreCompileInputs.cache
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\obj\Debug\net5.0\EntidadesExcepciones.dll
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\obj\Debug\net5.0\refint\EntidadesExcepciones.dll
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\obj\Debug\net5.0\EntidadesExcepciones.pdb
+C:\Users\gonza\source\repos\tps_laboratorio_2\TP3\Gonzalez.Ricardo.2D.TP3\EntidadesExcepciones\obj\Debug\net5.0\ref\EntidadesExcepciones.dll

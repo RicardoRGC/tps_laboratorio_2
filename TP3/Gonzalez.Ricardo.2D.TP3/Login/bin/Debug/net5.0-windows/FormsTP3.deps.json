@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FormsTP3/1.0.0": {
+        "dependencies": {
+          "EntidadesArchivos": "1.0.0",
+          "EntidadesTp3": "1.0.0"
+        },
+        "runtime": {
+          "FormsTP3.dll": {}
+        }
+      },
+      "EntidadesArchivos/1.0.0": {
+        "dependencies": {
+          "EntidadesExcepciones": "1.0.0"
+        },
+        "runtime": {
+          "EntidadesArchivos.dll": {}
+        }
+      },
+      "EntidadesExcepciones/1.0.0": {
+        "runtime": {
+          "EntidadesExcepciones.dll": {}
+        }
+      },
+      "EntidadesTp3/1.0.0": {
+        "dependencies": {
+          "EntidadesArchivos": "1.0.0",
+          "EntidadesExcepciones": "1.0.0"
+        },
+        "runtime": {
+          "EntidadesTp3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FormsTP3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntidadesArchivos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntidadesExcepciones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntidadesTp3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
