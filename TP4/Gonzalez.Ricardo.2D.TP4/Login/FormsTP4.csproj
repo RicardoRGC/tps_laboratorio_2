@@ -10,7 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EntidadesArchivos\EntidadesArchivos.csproj" />
     <ProjectReference Include="..\EntidadesExcepciones\EntidadesExcepciones.csproj" />
-    <ProjectReference Include="..\Usuario\EntidadesTp4.csproj" />
+    <ProjectReference Include="..\EntidadesTp\EntidadesTp4.csproj" />
   </ItemGroup>
 
   <ItemGroup>

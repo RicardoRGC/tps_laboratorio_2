@@ -14,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Usuario\EntidadesTp4.csproj" />
+    <ProjectReference Include="..\EntidadesExcepciones\EntidadesExcepciones.csproj" />
+    <ProjectReference Include="..\EntidadesTp\EntidadesTp4.csproj" />
   </ItemGroup>
 
 </Project>

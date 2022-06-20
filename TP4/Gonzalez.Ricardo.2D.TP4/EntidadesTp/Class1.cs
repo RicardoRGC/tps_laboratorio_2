@@ -1,9 +1,8 @@
 ﻿using System;
 
-namespace BaseDatos
+namespace EntidadesTp
 {
     public class Class1
     {
-
     }
 }
