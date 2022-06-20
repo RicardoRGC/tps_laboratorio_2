@@ -10,12 +10,10 @@ namespace FormsTP4
     public partial class FrmMenuAbm : Form
     {
         private bool sonUsuarios;
-        private CancellationTokenSource cts;
-
+     
         public FrmMenuAbm()
         {
             InitializeComponent();
-            cts = new CancellationTokenSource();
         }
 
 
@@ -66,11 +64,14 @@ namespace FormsTP4
                 }
                 else
                 {
+
+
                     Task tarea = Task.Run(() => {
 
                         RefrescarBiblioteca();
                     });
-
+                    cmbFiltrarUsuarios.Visible = false;
+                    lblFiltrar.Visible = false;
 
                 }
             }
@@ -180,7 +181,7 @@ namespace FormsTP4
                         DataGridViewColumn Column = dgvListado.Columns[0];
                         DataGridViewColumn Column1 = dgvListado.Columns[1];
                         DataGridViewColumn Column2 = dgvListado.Columns[2];
-                        // Column.Visible = false;
+                         Column.Visible = false;
                         Column2.Visible = false;
                         Column1.Visible = false;
                         break;

@@ -34,7 +34,7 @@
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.cmbFiltrarUsuarios = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFiltrar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,6 +103,7 @@
             // 
             // cmbFiltrarUsuarios
             // 
+            this.cmbFiltrarUsuarios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFiltrarUsuarios.FormattingEnabled = true;
             this.cmbFiltrarUsuarios.Location = new System.Drawing.Point(96, 228);
             this.cmbFiltrarUsuarios.Name = "cmbFiltrarUsuarios";
@@ -110,14 +111,14 @@
             this.cmbFiltrarUsuarios.TabIndex = 5;
             this.cmbFiltrarUsuarios.SelectedIndexChanged += new System.EventHandler(this.cmbFiltrarUsuarios_SelectedIndexChanged);
             // 
-            // label1
+            // lblFiltrar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 231);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 15);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Filtrar";
+            this.lblFiltrar.AutoSize = true;
+            this.lblFiltrar.Location = new System.Drawing.Point(35, 231);
+            this.lblFiltrar.Name = "lblFiltrar";
+            this.lblFiltrar.Size = new System.Drawing.Size(37, 15);
+            this.lblFiltrar.TabIndex = 6;
+            this.lblFiltrar.Text = "Filtrar";
             // 
             // FrmMenuAbm
             // 
@@ -126,7 +127,7 @@
             this.BackgroundImage = global::FormsTP4.Properties.Resources.fondoAmb;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(560, 270);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFiltrar);
             this.Controls.Add(this.cmbFiltrarUsuarios);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.BtnEliminar);
@@ -153,6 +154,6 @@
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ComboBox cmbFiltrarUsuarios;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFiltrar;
     }
 }

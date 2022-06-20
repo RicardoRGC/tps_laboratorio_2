@@ -6,7 +6,7 @@ namespace FormsTP4
 {
     public partial class FrmPago : Form
     {
-        private DelegadoPagoMensual delegado;
+        private DelegadoPagoMensual delegadoPagoM;
 
         public FrmPago()
         {
@@ -15,7 +15,7 @@ namespace FormsTP4
    
         public FrmPago(DelegadoPagoMensual delegado) : this()
         {
-            this.delegado = delegado;
+            this.delegadoPagoM = delegado;
         }
 
 
@@ -40,7 +40,7 @@ namespace FormsTP4
                 if (!string.IsNullOrWhiteSpace(txtbMonto.Text))
                 {
 
-                    delegado.Invoke(txtbMonto.Text);
+                    delegadoPagoM.Invoke(txtbMonto.Text);
 
                 }
                 else
