@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LastId.txt" />
+    <None Remove="SerializadoraListaEquipo.xml" />
+    <None Remove="SerializadoraListaUsuarios.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="LastId.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="SerializadoraListaEquipo.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+    <AdditionalFiles Include="SerializadoraListaUsuarios.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AdditionalFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesExcepciones\EntidadesExcepciones.csproj" />
+  </ItemGroup>
+
+</Project>
